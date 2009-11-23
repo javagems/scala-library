@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class Action in scala.swing</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/swing$package.html" target="_self">scala.swing</a>
+        <br></br>
+        <span class="entity">class  Action</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/swing/Action"><code>scala/swing/Action.scala</code></a>]
+      </div><hr></hr>
+      <a name="Action"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>class</code>
+        <em>Action</em>(<em>title0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)
+      </dt>
+      <dd><code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>An abstract action to be performed in reaction to user input.
+ 
+ Not every action component will honor every property of its action. 
+ An action itself can generally be configured so that certain properties 
+ should be ignored and instead taken from the component directly. In the 
+ end, it is up to a component which property it uses in which way.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>See Also</b></dt><dd><a href="" target="contentFrame" class="javax/swing/Action">javax.swing.Action</a></dd></dl>
+    <dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../scala/swing/Action$object.NoAction$object.html" target="_self">Action.NoAction</a></dd>
+      </dl><hr></hr>
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> lazy val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#peer" target="_self">peer</a></em>
+         : <a href="" target="contentFrame" class="javax/swing/Action">javax.swing.Action</a>
+        
+        
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#accelerator" target="_self">accelerator</a></em>
+         : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="javax/swing/KeyStroke">javax.swing.KeyStroke</a>]
+        
+        <div>For menus.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#accelerator_%3D%28Option%5Bjavax.swing.KeyStroke%5D%29" target="_self">accelerator_=</a></em>
+        (<em>k</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="javax/swing/KeyStroke">javax.swing.KeyStroke</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#apply%28%29" target="_self">apply</a></em>
+         : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#enabled" target="_self">enabled</a></em>
+         : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>For all components.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#enabled_%3D%28Boolean%29" target="_self">enabled_=</a></em>
+        (<em>b</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#icon" target="_self">icon</a></em>
+         : <a href="" target="contentFrame" class="javax/swing/Icon">javax.swing.Icon</a>
+        
+        <div>None if large icon and small icon are not equal.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#icon_%3D%28javax.swing.Icon%29" target="_self">icon_=</a></em>
+        (<em>i</em> : <a href="" target="contentFrame" class="javax/swing/Icon">javax.swing.Icon</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#longDescription" target="_self">longDescription</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Can be used for status bars, for example.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#longDescription_%3D%28String%29" target="_self">longDescription_=</a></em>
+        (<em>t</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#mnemonic" target="_self">mnemonic</a></em>
+         : <a href="../../scala/Int.html" target="_self">Int</a>
+        
+        <div>Default: java.awt.event.KeyEvent.VK_UNDEFINED, i.e., no mnemonic key.
+   For all buttons and thus menu items.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#mnemonic_%3D%28Int%29" target="_self">mnemonic_=</a></em>
+        (<em>m</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#smallIcon" target="_self">smallIcon</a></em>
+         : <a href="" target="contentFrame" class="javax/swing/Icon">javax.swing.Icon</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#smallIcon_%3D%28javax.swing.Icon%29" target="_self">smallIcon_=</a></em>
+        (<em>i</em> : <a href="" target="contentFrame" class="javax/swing/Icon">javax.swing.Icon</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#title" target="_self">title</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Title is not optional.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#title_%3D%28String%29" target="_self">title_=</a></em>
+        (<em>t</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#toolTip" target="_self">toolTip</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>For all components.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/Action.html#toolTip_%3D%28String%29" target="_self">toolTip_=</a></em>
+        (<em>t</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="peer"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>lazy val</code>
+        <em>peer</em> : <a href="" target="contentFrame" class="javax/swing/Action">javax.swing.Action</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="title"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>title</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Title is not optional.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="title_%3D%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>title_=</em>(<em>t</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="icon"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>icon</em> : <a href="" target="contentFrame" class="javax/swing/Icon">javax.swing.Icon</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>None if large icon and small icon are not equal.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="icon_%3D%28javax.swing.Icon%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>icon_=</em>(<em>i</em> : <a href="" target="contentFrame" class="javax/swing/Icon">javax.swing.Icon</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="smallIcon"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>smallIcon</em> : <a href="" target="contentFrame" class="javax/swing/Icon">javax.swing.Icon</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="smallIcon_%3D%28javax.swing.Icon%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>smallIcon_=</em>(<em>i</em> : <a href="" target="contentFrame" class="javax/swing/Icon">javax.swing.Icon</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="toolTip"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toolTip</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>For all components.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="toolTip_%3D%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toolTip_=</em>(<em>t</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="longDescription"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>longDescription</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Can be used for status bars, for example.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="longDescription_%3D%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>longDescription_=</em>(<em>t</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="mnemonic"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>mnemonic</em> : <a href="../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Default: java.awt.event.KeyEvent.VK_UNDEFINED, i.e., no mnemonic key.
+   For all buttons and thus menu items.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="mnemonic_%3D%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>mnemonic_=</em>(<em>m</em> : <a href="../../scala/Int.html" target="_self">Int</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="accelerator"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>accelerator</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="javax/swing/KeyStroke">javax.swing.KeyStroke</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>For menus.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="accelerator_%3D%28Option%5Bjavax.swing.KeyStroke%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>accelerator_=</em>(<em>k</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="javax/swing/KeyStroke">javax.swing.KeyStroke</a>]) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="enabled"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>enabled</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>For all components.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="enabled_%3D%28Boolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>enabled_=</em>(<em>b</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="apply%28%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>apply</em> : <a href="../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

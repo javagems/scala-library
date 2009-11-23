@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class LongMap in scala.collection.immutable</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/collection/immutable$package.html" target="_self">scala.collection.immutable</a>
+        <br></br>
+        <span class="entity">class  LongMap</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/collection/immutable/LongMap"><code>scala/collection/immutable/LongMap.scala</code></a>]
+      </div><hr></hr>
+      <a name="LongMap"></a><dl>
+      <dt>
+        
+        <code>sealed abstract</code>
+        <code>class</code>
+        <em>LongMap</em>[+<em>T</em>]
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/collection/immutable/Map.html" target="_self">Map</a>[<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]</dd>
+    </dl>
+      <dl><dd>Specialised immutable map structure for long keys, based on 
+ <a href="http://citeseer.ist.psu.edu/okasaki98fast.html">Fast Mergeable Long Maps</a>
+ by Okasaki and Gill. Essentially a trie based on binary digits of the the integers.</dd></dl>
+      <dl></dl>
+    
+      
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#%2B%2B%28Iterable%5B%28Long%2CS%29%5D%29" target="_self">++</a></em>
+        [<em>S</em> &gt;: <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>](<em>that</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[(<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#%2B%2B%28Iterable%5B%28Long%2CS%29%5D%29#S" target="_self">S</a>)]) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#%2B%2B%28Iterable%5B%28Long%2CS%29%5D%29#S" target="_self">S</a>]
+        
+        <div>Add a sequence of key/value pairs to this map.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#-%28Long%29" target="_self">-</a></em>
+        (<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]
+        
+        <div>Remove a key from this map</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#apply%28Long%29" target="_self">apply</a></em>
+        (<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>) : <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>
+        
+        <div>Retrieve the value which is associated with the given key. This
+    method throws an exception if there is no mapping from the given
+    key to a value.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#elements" target="_self">elements</a></em>
+         : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[(<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>)]
+        
+        <div>Iterator over key, value pairs of the map in unsigned order of the keys.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#empty" target="_self">empty</a></em>
+        [<em>S</em>] : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#empty#S" target="_self">S</a>]
+        
+        <div>This method returns a new map instance of the same class
+    mapping keys of the same type to values of type <code>C</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#filter%28%28%28Long%2CT%29%29%3D%3EBoolean%29" target="_self">filter</a></em>
+        (<em>f</em> : ((<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>)) =&gt; <a href="../../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]
+        
+        <div>This method removes all the mappings for which the predicate
+    <code>p</code> returns <code>false</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#foreach%28%28%28Long%2CT%29%29%3D%3EUnit%29" target="_self">foreach</a></em>
+        (<em>f</em> : ((<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>)) =&gt; <a href="../../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Loops over the key, value pairs of the map in unsigned order of the keys.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#foreachKey%28%28Long%29%3D%3EUnit%29" target="_self">foreachKey</a></em>
+        (<em>f</em> : (<a href="../../../scala/Long.html" target="_self">Long</a>) =&gt; <a href="../../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Loop over the keys of the map. The same as keys.foreach(f), but may
+   be more efficient.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#foreachValue%28%28T%29%3D%3EUnit%29" target="_self">foreachValue</a></em>
+        (<em>f</em> : (<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>) =&gt; <a href="../../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Loop over the keys of the map. The same as keys.foreach(f), but may
+   be more efficient.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#get%28Long%29" target="_self">get</a></em>
+        (<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]
+        
+        <div>Check if this map maps <code>key</code> to a value and return the
+    value if it exists.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#getOrElse%28Long%2C%3D%3ES%29" target="_self">getOrElse</a></em>
+        [<em>S</em> &gt;: <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>](<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>, <em>default</em> : =&gt; <a href="../../../scala/collection/immutable/LongMap.html#getOrElse%28Long%2C%3D%3ES%29#S" target="_self">S</a>) : <a href="../../../scala/collection/immutable/LongMap.html#getOrElse%28Long%2C%3D%3ES%29#S" target="_self">S</a>
+        
+        <div>Check if this map maps <code>key</code> to a value.
+     Return that value if it exists, otherwise return <code>default</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#intersection%28scala.collection.immutable.LongMap%5BR%5D%29" target="_self">intersection</a></em>
+        [<em>R</em>](<em>that</em> : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#intersection%28scala.collection.immutable.LongMap%5BR%5D%29#R" target="_self">R</a>]) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]
+        
+        <div>Left biased intersection. Returns the map that has all the same mappings as this but only for keys
+   which are present in the other map.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#intersectionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CT%2CS%29%3D%3ER%29" target="_self">intersectionWith</a></em>
+        [<em>S</em>, <em>R</em>](<em>that</em> : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#intersectionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CT%2CS%29%3D%3ER%29#S" target="_self">S</a>], <em>f</em> : (<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>, <a href="../../../scala/collection/immutable/LongMap.html#intersectionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CT%2CS%29%3D%3ER%29#S" target="_self">S</a>) =&gt; <a href="../../../scala/collection/immutable/LongMap.html#intersectionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CT%2CS%29%3D%3ER%29#R" target="_self">R</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#intersectionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CT%2CS%29%3D%3ER%29#R" target="_self">R</a>]
+        
+        <div>Forms the intersection of these two maps with a combinining function. The resulting map is
+   a map that has only keys present in both maps and has values produced from the original mappings
+   by combining them with f.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#isEmpty" target="_self">isEmpty</a></em>
+         : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+        
+        <div>Is this an empty map?</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#keys" target="_self">keys</a></em>
+         : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/Long.html" target="_self">Long</a>]
+        
+        <div>Creates an iterator for all keys.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#modifyOrRemove%28%28Long%2CT%29%3D%3EOption%5BS%5D%29" target="_self">modifyOrRemove</a></em>
+        [<em>S</em>](<em>f</em> : (<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>) =&gt; <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/immutable/LongMap.html#modifyOrRemove%28%28Long%2CT%29%3D%3EOption%5BS%5D%29#S" target="_self">S</a>]) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#modifyOrRemove%28%28Long%2CT%29%3D%3EOption%5BS%5D%29#S" target="_self">S</a>]
+        
+        <div>A combined transform and filter function. Returns an LongMap such that for each (key, value) mapping
+   in this map, if f(key, value) == None the map contains no mapping for key, and if <code>f(key, value)</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>final def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#size" target="_self">size</a></em>
+         : <a href="../../../scala/Int.html" target="_self">Int</a>
+        
+        <div>Compute the number of key-to-value mappings.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#stringPrefix" target="_self">stringPrefix</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Defines the prefix of this object's <code>toString</code> representation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#toList" target="_self">toList</a></em>
+         : <a href="../../../scala/List.html" target="_self">List</a>[(<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>)]
+        
+        <div>Returns a list containing all of the elements in this iterable object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#transform%28%28Long%2CT%29%3D%3ES%29" target="_self">transform</a></em>
+        [<em>S</em>](<em>f</em> : (<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>) =&gt; <a href="../../../scala/collection/immutable/LongMap.html#transform%28%28Long%2CT%29%3D%3ES%29#S" target="_self">S</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#transform%28%28Long%2CT%29%3D%3ES%29#S" target="_self">S</a>]
+        
+        <div>This function transforms all the values of mappings contained
+    in this map with function <code>f</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29" target="_self">unionWith</a></em>
+        [<em>S</em> &gt;: <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>](<em>that</em> : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29#S" target="_self">S</a>], <em>f</em> : (<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29#S" target="_self">S</a>, <a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29#S" target="_self">S</a>) =&gt; <a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29#S" target="_self">S</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29#S" target="_self">S</a>]
+        
+        <div>Forms a union map with that map, using the combining function to resolve conflicts.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#update%28Long%2CS%29" target="_self">update</a></em>
+        [<em>S</em> &gt;: <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>](<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>, <em>value</em> : <a href="../../../scala/collection/immutable/LongMap.html#update%28Long%2CS%29#S" target="_self">S</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#update%28Long%2CS%29#S" target="_self">S</a>]
+        
+        <div>This method allows one to create a new map with an
+    additional mapping from <code>key</code>
+    to <code>value</code>. If the map contains already a
+    mapping for <code>key</code>, it will be overridden by this
+    function.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#updateWith%28Long%2CS%2C%28T%2CS%29%3D%3ES%29" target="_self">updateWith</a></em>
+        [<em>S</em> &gt;: <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>](<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>, <em>value</em> : <a href="../../../scala/collection/immutable/LongMap.html#updateWith%28Long%2CS%2C%28T%2CS%29%3D%3ES%29#S" target="_self">S</a>, <em>f</em> : (<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>, <a href="../../../scala/collection/immutable/LongMap.html#updateWith%28Long%2CS%2C%28T%2CS%29%3D%3ES%29#S" target="_self">S</a>) =&gt; <a href="../../../scala/collection/immutable/LongMap.html#updateWith%28Long%2CS%2C%28T%2CS%29%3D%3ES%29#S" target="_self">S</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#updateWith%28Long%2CS%2C%28T%2CS%29%3D%3ES%29#S" target="_self">S</a>]
+        
+        <div>Updates the map, using the provided function to resolve conflicts if the key is already present.
+   Equivalent to 
+   <pre>this.get(key) match { 
+           case None => this.update(key, value); 
+           case Some(oldvalue) => this.update(key, f(oldvalue, value) }
+   </pre></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/collection/immutable/LongMap.html#values" target="_self">values</a></em>
+         : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]
+        
+        <div>Creates an iterator for a contained values.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/immutable/Map.html" target="_self">Map</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/immutable/Map.html#%2B%28%28A%2CB1%29%29" target="_self">+</a>, <a href="../../../scala/collection/immutable/Map.html#%2B%28%28A%2CB1%29%2C%28A%2CB1%29%2C%28A%2CB1%29*%29" target="_self">+</a>, <a href="../../../scala/collection/immutable/Map.html#%2B%2B%28Iterator%5B%28A%2CB1%29%5D%29" target="_self">++</a>, <a href="../../../scala/collection/immutable/Map.html#-%28A%2CA%2CA*%29" target="_self">-</a>, <a href="../../../scala/collection/immutable/Map.html#--%28Iterable%5BA%5D%29" target="_self">--</a>, <a href="../../../scala/collection/immutable/Map.html#--%28Iterator%5BA%5D%29" target="_self">--</a>, <a href="../../../scala/collection/immutable/Map.html#withDefault%28%28A%29%3D%3EB1%29" target="_self">withDefault</a>, <a href="../../../scala/collection/immutable/Map.html#withDefaultValue%28B1%29" target="_self">withDefaultValue</a>, <a href="../../../scala/collection/immutable/Map.html#%2B%28A%29" target="_self">+</a>, <a href="../../../scala/collection/immutable/Map.html#incl%28%28A%2CB1%29*%29" target="_self">incl</a>, <a href="../../../scala/collection/immutable/Map.html#incl%28Iterable%5B%28A%2CB1%29%5D%29" target="_self">incl</a>, <a href="../../../scala/collection/immutable/Map.html#excl%28A*%29" target="_self">excl</a>, <a href="../../../scala/collection/immutable/Map.html#excl%28Iterable%5BA%5D%29" target="_self">excl</a>, <a href="../../../scala/collection/immutable/Map.html#mappingToString%28%28A%2CB1%29%29" target="_self">mappingToString</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/collection/Map.html" target="_self">Map</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/collection/Map.html#contains%28A%29" target="_self">contains</a>, <a href="../../../scala/collection/Map.html#isDefinedAt%28A%29" target="_self">isDefinedAt</a>, <a href="../../../scala/collection/Map.html#keySet" target="_self">keySet</a>, <a href="../../../scala/collection/Map.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/collection/Map.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/collection/Map.html#toString%28%29" target="_self">toString</a>, <a href="../../../scala/collection/Map.html#default%28A%29" target="_self">default</a>, <a href="../../../scala/collection/Map.html#projection" target="_self">projection</a>, <a href="../../../scala/collection/Map.html#filterKeys%28%28A%29%3D%3EBoolean%29" target="_self">filterKeys</a>, <a href="../../../scala/collection/Map.html#mapElements%28%28B%29%3D%3EC%29" target="_self">mapElements</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Collection.html" target="_self">Collection</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Collection.html#toArray" target="_self">toArray</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Iterable.html" target="_self">Iterable</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Iterable.html#concat%28Iterable%5BB%5D%29" target="_self">concat</a>, <a href="../../../scala/Iterable.html#%2B%2B%28Iterable%5BB%5D%29" target="_self">++</a>, <a href="../../../scala/Iterable.html#map%28%28A%29%3D%3EB%29" target="_self">map</a>, <a href="../../../scala/Iterable.html#flatMap%28%28A%29%3D%3EIterable%5BB%5D%29" target="_self">flatMap</a>, <a href="../../../scala/Iterable.html#partition%28%28A%29%3D%3EBoolean%29" target="_self">partition</a>, <a href="../../../scala/Iterable.html#takeWhile%28%28A%29%3D%3EBoolean%29" target="_self">takeWhile</a>, <a href="../../../scala/Iterable.html#dropWhile%28%28A%29%3D%3EBoolean%29" target="_self">dropWhile</a>, <a href="../../../scala/Iterable.html#take%28Int%29" target="_self">take</a>, <a href="../../../scala/Iterable.html#drop%28Int%29" target="_self">drop</a>, <a href="../../../scala/Iterable.html#forall%28%28A%29%3D%3EBoolean%29" target="_self">forall</a>, <a href="../../../scala/Iterable.html#exists%28%28A%29%3D%3EBoolean%29" target="_self">exists</a>, <a href="../../../scala/Iterable.html#find%28%28A%29%3D%3EBoolean%29" target="_self">find</a>, <a href="../../../scala/Iterable.html#findIndexOf%28%28A%29%3D%3EBoolean%29" target="_self">findIndexOf</a>, <a href="../../../scala/Iterable.html#indexOf%28B%29" target="_self">indexOf</a>, <a href="../../../scala/Iterable.html#foldLeft%28B%29" target="_self">foldLeft</a>, <a href="../../../scala/Iterable.html#foldRight%28B%29" target="_self">foldRight</a>, <a href="../../../scala/Iterable.html#%2F%3A%28B%29" target="_self">/:</a>, <a href="../../../scala/Iterable.html#%3A%5C%28B%29" target="_self">:\</a>, <a href="../../../scala/Iterable.html#reduceLeft%28%28B%2CA%29%3D%3EB%29" target="_self">reduceLeft</a>, <a href="../../../scala/Iterable.html#reduceRight%28%28A%2CB%29%3D%3EB%29" target="_self">reduceRight</a>, <a href="../../../scala/Iterable.html#copyToBuffer%28scala.collection.mutable.Buffer%5BB%5D%29" target="_self">copyToBuffer</a>, <a href="../../../scala/Iterable.html#sameElements%28Iterable%5BB%5D%29" target="_self">sameElements</a>, <a href="../../../scala/Iterable.html#toSeq" target="_self">toSeq</a>, <a href="../../../scala/Iterable.html#toStream" target="_self">toStream</a>, <a href="../../../scala/Iterable.html#mkString%28String%2CString%2CString%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString%28String%29" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#mkString" target="_self">mkString</a>, <a href="../../../scala/Iterable.html#addString%28StringBuilder%2CString%2CString%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#addString%28StringBuilder%2CString%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#addString%28StringBuilder%29" target="_self">addString</a>, <a href="../../../scala/Iterable.html#copyToArray%28Array%5BB%5D%2CInt%29" target="_self">copyToArray</a>, <a href="../../../scala/Iterable.html#hasDefiniteSize" target="_self">hasDefiniteSize</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/PartialFunction.html" target="_self">PartialFunction</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/PartialFunction.html#orElse%28PartialFunction%5BA1%2CB1%5D%29" target="_self">orElse</a>, <a href="../../../scala/PartialFunction.html#andThen%28%28B%29%3D%3EC%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="empty"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>empty</em>[<em>S</em>] : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#empty#S" target="_self">S</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>This method returns a new map instance of the same class
+    mapping keys of the same type to values of type <code>C</code>.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/immutable/Map.html" target="_self">Map</a>.<a href="../../../scala/collection/immutable/Map.html#empty" target="_self">empty</a>
+        </dd>
+      </dl><hr></hr>
+<a name="toList"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toList</em> : <a href="../../../scala/List.html" target="_self">List</a>[(<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>)]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a list containing all of the elements in this iterable object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Notes</b></dt><dd>Will not terminate for infinite-sized collections.</dd></dl>
+    <hr></hr>
+<a name="elements"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>elements</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[(<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>)]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Iterator over key, value pairs of the map in unsigned order of the keys.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="foreach%28%28%28Long%2CT%29%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code>override final</code>
+        <code>def</code>
+        <em>foreach</em>(<em>f</em> : ((<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>)) =&gt; <a href="../../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Loops over the key, value pairs of the map in unsigned order of the keys.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="keys"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>keys</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/Long.html" target="_self">Long</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates an iterator for all keys.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>an iterator over all keys.</dd></dl>
+    <hr></hr>
+<a name="foreachKey%28%28Long%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>foreachKey</em>(<em>f</em> : (<a href="../../../scala/Long.html" target="_self">Long</a>) =&gt; <a href="../../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Loop over the keys of the map. The same as keys.foreach(f), but may
+   be more efficient.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>The loop body</dd></dl>
+    <hr></hr>
+<a name="values"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>values</em> : <a href="../../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Creates an iterator for a contained values.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>an iterator over all values.</dd></dl>
+    <hr></hr>
+<a name="foreachValue%28%28T%29%3D%3EUnit%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>foreachValue</em>(<em>f</em> : (<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>) =&gt; <a href="../../../scala/Unit.html" target="_self">Unit</a>) : <a href="../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Loop over the keys of the map. The same as keys.foreach(f), but may
+   be more efficient.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>The loop body</dd></dl>
+    <hr></hr>
+<a name="stringPrefix"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>stringPrefix</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Defines the prefix of this object's <code>toString</code> representation.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="isEmpty"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>isEmpty</em> : <a href="../../../scala/Boolean.html" target="_self">Boolean</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Is this an empty map?</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd><code>true</code> iff the map is empty.</dd></dl>
+    <hr></hr>
+<a name="filter%28%28%28Long%2CT%29%29%3D%3EBoolean%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>filter</em>(<em>f</em> : ((<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>)) =&gt; <a href="../../../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>This method removes all the mappings for which the predicate
+    <code>p</code> returns <code>false</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>p - </code>A prediacte over key-value pairs</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the updated map</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/immutable/Map.html" target="_self">Map</a>.<a href="../../../scala/collection/immutable/Map.html#filter%28%28%28A%2CB%29%29%3D%3EBoolean%29" target="_self">filter</a>
+        </dd>
+      </dl><hr></hr>
+<a name="transform%28%28Long%2CT%29%3D%3ES%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>transform</em>[<em>S</em>](<em>f</em> : (<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>) =&gt; <a href="../../../scala/collection/immutable/LongMap.html#transform%28%28Long%2CT%29%3D%3ES%29#S" target="_self">S</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#transform%28%28Long%2CT%29%3D%3ES%29#S" target="_self">S</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>This function transforms all the values of mappings contained
+    in this map with function <code>f</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>A function over keys and values</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the updated map</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/immutable/Map.html" target="_self">Map</a>.<a href="../../../scala/collection/immutable/Map.html#transform%28%28A%2CB%29%3D%3EC%29" target="_self">transform</a>
+        </dd>
+      </dl><hr></hr>
+<a name="size"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>size</em> : <a href="../../../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Compute the number of key-to-value mappings.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the number of mappings</dd></dl>
+    <hr></hr>
+<a name="get%28Long%29"></a><dl>
+      <dt>
+        
+        <code>final</code>
+        <code>def</code>
+        <em>get</em>(<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Check if this map maps <code>key</code> to a value and return the
+    value if it exists.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>the key of the mapping of interest</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the value of the mapping, if it exists</dd></dl>
+    <hr></hr>
+<a name="getOrElse%28Long%2C%3D%3ES%29"></a><dl>
+      <dt>
+        
+        <code>override final</code>
+        <code>def</code>
+        <em>getOrElse</em>[<em>S</em> &gt;: <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>](<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>, <em>default</em> : =&gt; <a href="../../../scala/collection/immutable/LongMap.html#getOrElse%28Long%2C%3D%3ES%29#S" target="_self">S</a>) : <a href="../../../scala/collection/immutable/LongMap.html#getOrElse%28Long%2C%3D%3ES%29#S" target="_self">S</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Check if this map maps <code>key</code> to a value.
+     Return that value if it exists, otherwise return <code>default</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="apply%28Long%29"></a><dl>
+      <dt>
+        
+        <code>override final</code>
+        <code>def</code>
+        <em>apply</em>(<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>) : <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Retrieve the value which is associated with the given key. This
+    method throws an exception if there is no mapping from the given
+    key to a value.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>the key</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the value associated with the given key.</dd></dl>
+    <hr></hr>
+<a name="update%28Long%2CS%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>update</em>[<em>S</em> &gt;: <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>](<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>, <em>value</em> : <a href="../../../scala/collection/immutable/LongMap.html#update%28Long%2CS%29#S" target="_self">S</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#update%28Long%2CS%29#S" target="_self">S</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>This method allows one to create a new map with an
+    additional mapping from <code>key</code>
+    to <code>value</code>. If the map contains already a
+    mapping for <code>key</code>, it will be overridden by this
+    function.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>...</dd><dd><code>value - </code>...</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the created map</dd><dt style="margin:10px 0 0 20px;">
+        <b>Deprecated</b></dt><dd>use <code>+({A, B})</code> instead</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/immutable/Map.html" target="_self">Map</a>.<a href="../../../scala/collection/immutable/Map.html#update%28A%2CB1%29" target="_self">update</a>
+        </dd>
+      </dl><hr></hr>
+<a name="updateWith%28Long%2CS%2C%28T%2CS%29%3D%3ES%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>updateWith</em>[<em>S</em> &gt;: <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>](<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>, <em>value</em> : <a href="../../../scala/collection/immutable/LongMap.html#updateWith%28Long%2CS%2C%28T%2CS%29%3D%3ES%29#S" target="_self">S</a>, <em>f</em> : (<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>, <a href="../../../scala/collection/immutable/LongMap.html#updateWith%28Long%2CS%2C%28T%2CS%29%3D%3ES%29#S" target="_self">S</a>) =&gt; <a href="../../../scala/collection/immutable/LongMap.html#updateWith%28Long%2CS%2C%28T%2CS%29%3D%3ES%29#S" target="_self">S</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#updateWith%28Long%2CS%2C%28T%2CS%29%3D%3ES%29#S" target="_self">S</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Updates the map, using the provided function to resolve conflicts if the key is already present.
+   Equivalent to 
+   <pre>this.get(key) match { 
+           case None => this.update(key, value); 
+           case Some(oldvalue) => this.update(key, f(oldvalue, value) }
+   </pre></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>The key to update</dd><dd><code>value - </code>The value to use if there is no conflict</dd><dd><code>f - </code>The function used to resolve conflicts.</dd></dl>
+    <hr></hr>
+<a name="-%28Long%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>-</em>(<em>key</em> : <a href="../../../scala/Long.html" target="_self">Long</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Remove a key from this map</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>key - </code>the key to be removed</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>If the map does not contain a binding for <code>key</code>              it is returned unchanged. Otherwise, return a new map 
+              without a binding for <code>key</code></dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/immutable/Map.html" target="_self">Map</a>.<a href="../../../scala/collection/immutable/Map.html#-%28A%29" target="_self">-</a>
+        </dd>
+      </dl><hr></hr>
+<a name="modifyOrRemove%28%28Long%2CT%29%3D%3EOption%5BS%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>modifyOrRemove</em>[<em>S</em>](<em>f</em> : (<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>) =&gt; <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/collection/immutable/LongMap.html#modifyOrRemove%28%28Long%2CT%29%3D%3EOption%5BS%5D%29#S" target="_self">S</a>]) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#modifyOrRemove%28%28Long%2CT%29%3D%3EOption%5BS%5D%29#S" target="_self">S</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A combined transform and filter function. Returns an LongMap such that for each (key, value) mapping
+   in this map, if f(key, value) == None the map contains no mapping for key, and if <code>f(key, value)</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>f - </code>The transforming function.</dd></dl>
+    <hr></hr>
+<a name="unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>unionWith</em>[<em>S</em> &gt;: <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>](<em>that</em> : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29#S" target="_self">S</a>], <em>f</em> : (<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29#S" target="_self">S</a>, <a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29#S" target="_self">S</a>) =&gt; <a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29#S" target="_self">S</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#unionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CS%2CS%29%3D%3ES%29#S" target="_self">S</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Forms a union map with that map, using the combining function to resolve conflicts.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>that - </code>the map to form a union with.</dd><dd><code>f - </code>the function used to resolve conflicts between two mappings.</dd></dl>
+    <hr></hr>
+<a name="intersectionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CT%2CS%29%3D%3ER%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>intersectionWith</em>[<em>S</em>, <em>R</em>](<em>that</em> : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#intersectionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CT%2CS%29%3D%3ER%29#S" target="_self">S</a>], <em>f</em> : (<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>, <a href="../../../scala/collection/immutable/LongMap.html#intersectionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CT%2CS%29%3D%3ER%29#S" target="_self">S</a>) =&gt; <a href="../../../scala/collection/immutable/LongMap.html#intersectionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CT%2CS%29%3D%3ER%29#R" target="_self">R</a>) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#intersectionWith%28scala.collection.immutable.LongMap%5BS%5D%2C%28Long%2CT%2CS%29%3D%3ER%29#R" target="_self">R</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Forms the intersection of these two maps with a combinining function. The resulting map is
+   a map that has only keys present in both maps and has values produced from the original mappings
+   by combining them with f.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>that - </code>The map to intersect with.</dd><dd><code>f - </code>The combining function.</dd></dl>
+    <hr></hr>
+<a name="intersection%28scala.collection.immutable.LongMap%5BR%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>intersection</em>[<em>R</em>](<em>that</em> : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#intersection%28scala.collection.immutable.LongMap%5BR%5D%29#R" target="_self">R</a>]) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Left biased intersection. Returns the map that has all the same mappings as this but only for keys
+   which are present in the other map.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>that - </code>The map to intersect with.</dd></dl>
+    <hr></hr>
+<a name="%2B%2B%28Iterable%5B%28Long%2CS%29%5D%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>++</em>[<em>S</em> &gt;: <a href="../../../scala/collection/immutable/LongMap.html#T" target="_self">T</a>](<em>that</em> : <a href="../../../scala/Iterable.html" target="_self">Iterable</a>[(<a href="../../../scala/Long.html" target="_self">Long</a>, <a href="../../../scala/collection/immutable/LongMap.html#%2B%2B%28Iterable%5B%28Long%2CS%29%5D%29#S" target="_self">S</a>)]) : <a href="../../../scala/collection/immutable/LongMap.html" target="_self">LongMap</a>[<a href="../../../scala/collection/immutable/LongMap.html#%2B%2B%28Iterable%5B%28Long%2CS%29%5D%29#S" target="_self">S</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Add a sequence of key/value pairs to this map.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>kvs - </code>the iterable object containing all key/value pairs.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>A new map with the new bindings added</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../scala/collection/immutable/Map.html" target="_self">Map</a>.<a href="../../../scala/collection/immutable/Map.html#%2B%2B%28Iterable%5B%28A%2CB1%29%5D%29" target="_self">++</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

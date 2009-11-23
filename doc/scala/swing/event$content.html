@@ -1,0 +1,1174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.swing.event</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.7.7.final API</div></div><p><div>This document is the API specification for Scala Library</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ActionEvent.html" target="_self">ActionEvent</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/AdjustingEvent.html" target="_self">AdjustingEvent</a></em>
+        <code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>An event that indicates some editing operation that can be still in progress. 
+ Example: dragging a slider creates a number of AdjustmentEvents with 
+ adjusting == true until the user finally releases the mouse button.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/BackgroundChanged.html" target="_self">BackgroundChanged</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ButtonClicked.html" target="_self">ButtonClicked</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/AbstractButton.html" target="_self">AbstractButton</a>)<code> extends </code><a href="../../scala/swing/event/ActionEvent.html" target="_self">ActionEvent</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/CaretUpdate.html" target="_self">CaretUpdate</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/TextComponent.html" target="_self">TextComponent</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentAdded.html" target="_self">ComponentAdded</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Container.html" target="_self">Container</a>, <code>val </code><em>child</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ContainerEvent.html" target="_self">ContainerEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a></em>
+        <code> extends </code><a href="../../scala/swing/event/UIEvent.html" target="_self">UIEvent</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentHidden.html" target="_self">ComponentHidden</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentMoved.html" target="_self">ComponentMoved</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentRemoved.html" target="_self">ComponentRemoved</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Container.html" target="_self">Container</a>, <code>val </code><em>child</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ContainerEvent.html" target="_self">ContainerEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentResized.html" target="_self">ComponentResized</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentShown.html" target="_self">ComponentShown</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ContainerEvent.html" target="_self">ContainerEvent</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Container.html" target="_self">Container</a>)<code> extends </code><a href="../../scala/swing/event/UIEvent.html" target="_self">UIEvent</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/EditDone.html" target="_self">EditDone</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/TextField.html" target="_self">TextField</a>)<code> extends </code><a href="../../scala/swing/event/ValueChanged.html" target="_self">ValueChanged</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/Event.html" target="_self">Event</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/FocusEvent.html" target="_self">FocusEvent</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val </code><em>other</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/swing/Component.html" target="_self">Component</a>], <code>val </code><em>temporary</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The other component is None if it is a non Swing, i.e., AWT or native, component.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/FocusGained.html" target="_self">FocusGained</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val override </code><em>other</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/swing/Component.html" target="_self">Component</a>], <code>val override </code><em>temporary</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>)<code> extends </code><a href="../../scala/swing/event/FocusEvent.html" target="_self">FocusEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/FocusLost.html" target="_self">FocusLost</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val override </code><em>other</em> : <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/swing/Component.html" target="_self">Component</a>], <code>val override </code><em>temporary</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>)<code> extends </code><a href="../../scala/swing/event/FocusEvent.html" target="_self">FocusEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/FontChanged.html" target="_self">FontChanged</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ForegroundChanged.html" target="_self">ForegroundChanged</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/InputEvent.html" target="_self">InputEvent</a></em>
+        <code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListChange.html" target="_self">ListChange</a></em>
+        [<em>A</em>](<code>val override </code><em>source</em> : <a href="../../scala/swing/ListView.html" target="_self">ListView</a>[<a href="../../scala/swing/event/ListChange.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/swing/event/ListEvent.html" target="_self">ListEvent</a>[<a href="../../scala/swing/event/ListChange.html#A" target="_self">A</a>]<code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListChanged.html" target="_self">ListChanged</a></em>
+        [<em>A</em>](<code>val override </code><em>source</em> : <a href="../../scala/swing/ListView.html" target="_self">ListView</a>[<a href="../../scala/swing/event/ListChanged.html#A" target="_self">A</a>])<code> extends </code><a href="../../scala/swing/event/ListChange.html" target="_self">ListChange</a>[<a href="../../scala/swing/event/ListChanged.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListElementsAdded.html" target="_self">ListElementsAdded</a></em>
+        [<em>A</em>](<code>val override </code><em>source</em> : <a href="../../scala/swing/ListView.html" target="_self">ListView</a>[<a href="../../scala/swing/event/ListElementsAdded.html#A" target="_self">A</a>], <code>val </code><em>range</em> : <a href="../../scala/Range.html" target="_self">Range</a>)<code> extends </code><a href="../../scala/swing/event/ListChange.html" target="_self">ListChange</a>[<a href="../../scala/swing/event/ListElementsAdded.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListElementsRemoved.html" target="_self">ListElementsRemoved</a></em>
+        [<em>A</em>](<code>val override </code><em>source</em> : <a href="../../scala/swing/ListView.html" target="_self">ListView</a>[<a href="../../scala/swing/event/ListElementsRemoved.html#A" target="_self">A</a>], <code>val </code><em>range</em> : <a href="../../scala/Range.html" target="_self">Range</a>)<code> extends </code><a href="../../scala/swing/event/ListChange.html" target="_self">ListChange</a>[<a href="../../scala/swing/event/ListElementsRemoved.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListEvent.html" target="_self">ListEvent</a></em>
+        [<em>A</em>]<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListSelectionChanged.html" target="_self">ListSelectionChanged</a></em>
+        [<em>A</em>](<code>val override </code><em>source</em> : <a href="../../scala/swing/ListView.html" target="_self">ListView</a>[<a href="../../scala/swing/event/ListSelectionChanged.html#A" target="_self">A</a>], <code>val </code><em>range</em> : <a href="../../scala/Range.html" target="_self">Range</a>, <code>val </code><em>live</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>)<code> extends </code><a href="../../scala/swing/event/SelectionChanged.html" target="_self">SelectionChanged</a><code> with </code><a href="../../scala/swing/event/ListEvent.html" target="_self">ListEvent</a>[<a href="../../scala/swing/event/ListSelectionChanged.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListSelectionEvent.html" target="_self">ListSelectionEvent</a></em>
+        <code> extends </code><a href="../../scala/swing/event/SelectionEvent.html" target="_self">SelectionEvent</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseButtonEvent.html" target="_self">MouseButtonEvent</a></em>
+        (<em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <code>val override </code><em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>clicks</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>triggersPopup</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/MouseEvent.html" target="_self">MouseEvent</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseClicked.html" target="_self">MouseClicked</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val </code><em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <code>val override </code><em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>clicks</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>triggersPopup</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/MouseButtonEvent.html" target="_self">MouseButtonEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseDragged.html" target="_self">MouseDragged</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val </code><em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <code>val override </code><em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/MouseMotionEvent.html" target="_self">MouseMotionEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseEntered.html" target="_self">MouseEntered</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val </code><em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <code>val override </code><em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/MouseMotionEvent.html" target="_self">MouseMotionEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseEvent.html" target="_self">MouseEvent</a></em>
+        (<code>val </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <code>val </code><em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/InputEvent.html" target="_self">InputEvent</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseExited.html" target="_self">MouseExited</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val </code><em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <code>val override </code><em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/MouseMotionEvent.html" target="_self">MouseMotionEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseMotionEvent.html" target="_self">MouseMotionEvent</a></em>
+        (<em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/MouseEvent.html" target="_self">MouseEvent</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseMoved.html" target="_self">MouseMoved</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val </code><em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <code>val override </code><em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/MouseMotionEvent.html" target="_self">MouseMotionEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MousePressed.html" target="_self">MousePressed</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val </code><em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <code>val override </code><em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>clicks</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>triggersPopup</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/MouseButtonEvent.html" target="_self">MouseButtonEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseReleased.html" target="_self">MouseReleased</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val </code><em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <code>val override </code><em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>clicks</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>triggersPopup</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>, <em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/MouseButtonEvent.html" target="_self">MouseButtonEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseWheelMoved.html" target="_self">MouseWheelMoved</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>, <code>val </code><em>point</em> : <a href="" target="contentFrame" class="java/awt/Point">java.awt.Point</a>, <code>val override </code><em>modifiers</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>rotation</em> : <a href="../../scala/Int.html" target="_self">Int</a>, <em>when</em> : <a href="../../scala/Long.html" target="_self">Long</a>)<code> extends </code><a href="../../scala/swing/event/MouseEvent.html" target="_self">MouseEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/SelectionChanged.html" target="_self">SelectionChanged</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/SelectionEvent.html" target="_self">SelectionEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/SelectionEvent.html" target="_self">SelectionEvent</a></em>
+        <code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableChange.html" target="_self">TableChange</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Table.html" target="_self">Table</a>)<code> extends </code><a href="../../scala/swing/event/TableEvent.html" target="_self">TableEvent</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableChanged.html" target="_self">TableChanged</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Table.html" target="_self">Table</a>)<code> extends </code><a href="../../scala/swing/event/TableChange.html" target="_self">TableChange</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>The table structure, i.e., the column order, names, and types stay the same, 
+ but anything else might have changed.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableColumnsSelected.html" target="_self">TableColumnsSelected</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Table.html" target="_self">Table</a>, <code>val </code><em>range</em> : <a href="../../scala/Range.html" target="_self">Range</a>, <code>val </code><em>adjusting</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>)<code> extends </code><a href="../../scala/swing/event/TableEvent.html" target="_self">TableEvent</a><code> with </code><a href="../../scala/swing/event/AdjustingEvent.html" target="_self">AdjustingEvent</a><code> with </code><a href="../../scala/swing/event/ListSelectionEvent.html" target="_self">ListSelectionEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableEvent.html" target="_self">TableEvent</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Table.html" target="_self">Table</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableResized.html" target="_self">TableResized</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Table.html" target="_self">Table</a>)<code> extends </code><a href="../../scala/swing/event/TableChange.html" target="_self">TableChange</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>Any change that caused the table to change it's size</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableRowsAdded.html" target="_self">TableRowsAdded</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Table.html" target="_self">Table</a>, <code>val </code><em>range</em> : <a href="../../scala/Range.html" target="_self">Range</a>)<code> extends </code><a href="../../scala/swing/event/TableResized.html" target="_self">TableResized</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableRowsRemoved.html" target="_self">TableRowsRemoved</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Table.html" target="_self">Table</a>, <code>val </code><em>range</em> : <a href="../../scala/Range.html" target="_self">Range</a>)<code> extends </code><a href="../../scala/swing/event/TableResized.html" target="_self">TableResized</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableRowsSelected.html" target="_self">TableRowsSelected</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Table.html" target="_self">Table</a>, <code>val </code><em>range</em> : <a href="../../scala/Range.html" target="_self">Range</a>, <code>val </code><em>adjusting</em> : <a href="../../scala/Boolean.html" target="_self">Boolean</a>)<code> extends </code><a href="../../scala/swing/event/TableEvent.html" target="_self">TableEvent</a><code> with </code><a href="../../scala/swing/event/AdjustingEvent.html" target="_self">AdjustingEvent</a><code> with </code><a href="../../scala/swing/event/ListSelectionEvent.html" target="_self">ListSelectionEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableStructureChanged.html" target="_self">TableStructureChanged</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Table.html" target="_self">Table</a>)<code> extends </code><a href="../../scala/swing/event/TableChange.html" target="_self">TableChange</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>The most general table change. The table might have changed completely, 
+ i.e., comlumns might have been reordered, rows added or removed, etc. 
+ No other event indicates that the structure might have changed.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableUpdated.html" target="_self">TableUpdated</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Table.html" target="_self">Table</a>, <code>val </code><em>range</em> : <a href="../../scala/Range.html" target="_self">Range</a>, <code>val </code><em>column</em> : <a href="../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../scala/swing/event/TableChange.html" target="_self">TableChange</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>The size of the table stays the same, but the given range of rows might 
+ have changed but only in the given column. A value of -1 for the column 
+ denotes all columns.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/UIEvent.html" target="_self">UIEvent</a></em>
+        <code> extends </code><a href="../../scala/swing/event/Event.html" target="_self">Event</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ValueChanged.html" target="_self">ValueChanged</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../../scala/swing/event/ComponentEvent.html" target="_self">ComponentEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowActivated.html" target="_self">WindowActivated</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Frame.html" target="_self">Frame</a>)<code> extends </code><a href="../../scala/swing/event/WindowEvent.html" target="_self">WindowEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowClosed.html" target="_self">WindowClosed</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Frame.html" target="_self">Frame</a>)<code> extends </code><a href="../../scala/swing/event/WindowEvent.html" target="_self">WindowEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowClosing.html" target="_self">WindowClosing</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Frame.html" target="_self">Frame</a>)<code> extends </code><a href="../../scala/swing/event/WindowEvent.html" target="_self">WindowEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowDeactivated.html" target="_self">WindowDeactivated</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Frame.html" target="_self">Frame</a>)<code> extends </code><a href="../../scala/swing/event/WindowEvent.html" target="_self">WindowEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowDeiconified.html" target="_self">WindowDeiconified</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Frame.html" target="_self">Frame</a>)<code> extends </code><a href="../../scala/swing/event/WindowEvent.html" target="_self">WindowEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowEvent.html" target="_self">WindowEvent</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Frame.html" target="_self">Frame</a>)<code> extends </code><a href="../../scala/swing/event/UIEvent.html" target="_self">UIEvent</a><code> with </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowIconified.html" target="_self">WindowIconified</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Frame.html" target="_self">Frame</a>)<code> extends </code><a href="../../scala/swing/event/WindowEvent.html" target="_self">WindowEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowOpened.html" target="_self">WindowOpened</a></em>
+        (<code>val override </code><em>source</em> : <a href="../../scala/swing/Frame.html" target="_self">Frame</a>)<code> extends </code><a href="../../scala/swing/event/WindowEvent.html" target="_self">WindowEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ActionEvent$object.html" target="_self">ActionEvent</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/ActionEvent.html" target="_self">ActionEvent</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/BackgroundChanged$object.html" target="_self">BackgroundChanged</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/BackgroundChanged.html" target="_self">BackgroundChanged</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ButtonClicked$object.html" target="_self">ButtonClicked</a></em>
+        <code> extends </code>(<a href="../../scala/swing/AbstractButton.html" target="_self">AbstractButton</a>) =&gt; <a href="../../scala/swing/event/ButtonClicked.html" target="_self">ButtonClicked</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/CaretUpdate$object.html" target="_self">CaretUpdate</a></em>
+        <code> extends </code>(<a href="../../scala/swing/TextComponent.html" target="_self">TextComponent</a>) =&gt; <a href="../../scala/swing/event/CaretUpdate.html" target="_self">CaretUpdate</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentAdded$object.html" target="_self">ComponentAdded</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Container.html" target="_self">Container</a>, <a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/ComponentAdded.html" target="_self">ComponentAdded</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentHidden$object.html" target="_self">ComponentHidden</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/ComponentHidden.html" target="_self">ComponentHidden</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentMoved$object.html" target="_self">ComponentMoved</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/ComponentMoved.html" target="_self">ComponentMoved</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentRemoved$object.html" target="_self">ComponentRemoved</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Container.html" target="_self">Container</a>, <a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/ComponentRemoved.html" target="_self">ComponentRemoved</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentResized$object.html" target="_self">ComponentResized</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/ComponentResized.html" target="_self">ComponentResized</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ComponentShown$object.html" target="_self">ComponentShown</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/ComponentShown.html" target="_self">ComponentShown</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/EditDone$object.html" target="_self">EditDone</a></em>
+        <code> extends </code>(<a href="../../scala/swing/TextField.html" target="_self">TextField</a>) =&gt; <a href="../../scala/swing/event/EditDone.html" target="_self">EditDone</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/FocusGained$object.html" target="_self">FocusGained</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>, <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/swing/Component.html" target="_self">Component</a>], <a href="../../scala/Boolean.html" target="_self">Boolean</a>) =&gt; <a href="../../scala/swing/event/FocusGained.html" target="_self">FocusGained</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/FocusLost$object.html" target="_self">FocusLost</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>, <a href="../../scala/Option.html" target="_self">Option</a>[<a href="../../scala/swing/Component.html" target="_self">Component</a>], <a href="../../scala/Boolean.html" target="_self">Boolean</a>) =&gt; <a href="../../scala/swing/event/FocusLost.html" target="_self">FocusLost</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/FontChanged$object.html" target="_self">FontChanged</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/FontChanged.html" target="_self">FontChanged</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ForegroundChanged$object.html" target="_self">ForegroundChanged</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/ForegroundChanged.html" target="_self">ForegroundChanged</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListChanged$object.html" target="_self">ListChanged</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListElementsAdded$object.html" target="_self">ListElementsAdded</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListElementsRemoved$object.html" target="_self">ListElementsRemoved</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ListSelectionChanged$object.html" target="_self">ListSelectionChanged</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseClicked$object.html" target="_self">MouseClicked</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseDragged$object.html" target="_self">MouseDragged</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseEntered$object.html" target="_self">MouseEntered</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseExited$object.html" target="_self">MouseExited</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseMoved$object.html" target="_self">MouseMoved</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MousePressed$object.html" target="_self">MousePressed</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseReleased$object.html" target="_self">MouseReleased</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/MouseWheelMoved$object.html" target="_self">MouseWheelMoved</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/SelectionChanged$object.html" target="_self">SelectionChanged</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/SelectionChanged.html" target="_self">SelectionChanged</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableChanged$object.html" target="_self">TableChanged</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Table.html" target="_self">Table</a>) =&gt; <a href="../../scala/swing/event/TableChanged.html" target="_self">TableChanged</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableColumnsSelected$object.html" target="_self">TableColumnsSelected</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Table.html" target="_self">Table</a>, <a href="../../scala/Range.html" target="_self">Range</a>, <a href="../../scala/Boolean.html" target="_self">Boolean</a>) =&gt; <a href="../../scala/swing/event/TableColumnsSelected.html" target="_self">TableColumnsSelected</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableResized$object.html" target="_self">TableResized</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Table.html" target="_self">Table</a>) =&gt; <a href="../../scala/swing/event/TableResized.html" target="_self">TableResized</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableRowsAdded$object.html" target="_self">TableRowsAdded</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Table.html" target="_self">Table</a>, <a href="../../scala/Range.html" target="_self">Range</a>) =&gt; <a href="../../scala/swing/event/TableRowsAdded.html" target="_self">TableRowsAdded</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableRowsRemoved$object.html" target="_self">TableRowsRemoved</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Table.html" target="_self">Table</a>, <a href="../../scala/Range.html" target="_self">Range</a>) =&gt; <a href="../../scala/swing/event/TableRowsRemoved.html" target="_self">TableRowsRemoved</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableRowsSelected$object.html" target="_self">TableRowsSelected</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Table.html" target="_self">Table</a>, <a href="../../scala/Range.html" target="_self">Range</a>, <a href="../../scala/Boolean.html" target="_self">Boolean</a>) =&gt; <a href="../../scala/swing/event/TableRowsSelected.html" target="_self">TableRowsSelected</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableStructureChanged$object.html" target="_self">TableStructureChanged</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Table.html" target="_self">Table</a>) =&gt; <a href="../../scala/swing/event/TableStructureChanged.html" target="_self">TableStructureChanged</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/TableUpdated$object.html" target="_self">TableUpdated</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Table.html" target="_self">Table</a>, <a href="../../scala/Range.html" target="_self">Range</a>, <a href="../../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../../scala/swing/event/TableUpdated.html" target="_self">TableUpdated</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/ValueChanged$object.html" target="_self">ValueChanged</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Component.html" target="_self">Component</a>) =&gt; <a href="../../scala/swing/event/ValueChanged.html" target="_self">ValueChanged</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowActivated$object.html" target="_self">WindowActivated</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Frame.html" target="_self">Frame</a>) =&gt; <a href="../../scala/swing/event/WindowActivated.html" target="_self">WindowActivated</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowClosed$object.html" target="_self">WindowClosed</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Frame.html" target="_self">Frame</a>) =&gt; <a href="../../scala/swing/event/WindowClosed.html" target="_self">WindowClosed</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowClosing$object.html" target="_self">WindowClosing</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Frame.html" target="_self">Frame</a>) =&gt; <a href="../../scala/swing/event/WindowClosing.html" target="_self">WindowClosing</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowDeactivated$object.html" target="_self">WindowDeactivated</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Frame.html" target="_self">Frame</a>) =&gt; <a href="../../scala/swing/event/WindowDeactivated.html" target="_self">WindowDeactivated</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowDeiconified$object.html" target="_self">WindowDeiconified</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Frame.html" target="_self">Frame</a>) =&gt; <a href="../../scala/swing/event/WindowDeiconified.html" target="_self">WindowDeiconified</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowIconified$object.html" target="_self">WindowIconified</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Frame.html" target="_self">Frame</a>) =&gt; <a href="../../scala/swing/event/WindowIconified.html" target="_self">WindowIconified</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/swing/event/WindowOpened$object.html" target="_self">WindowOpened</a></em>
+        <code> extends </code>(<a href="../../scala/swing/Frame.html" target="_self">Frame</a>) =&gt; <a href="../../scala/swing/event/WindowOpened.html" target="_self">WindowOpened</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

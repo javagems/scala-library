@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.xml.pull</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.7.7.final API</div></div><p><div>This document is the API specification for Scala Library</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvComment.html" target="_self">EvComment</a></em>
+        (<code>val </code><em>text</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>A comment is encountered</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvElemEnd.html" target="_self">EvElemEnd</a></em>
+        (<code>val </code><em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>label</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>An element is encountered the last time</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvElemStart.html" target="_self">EvElemStart</a></em>
+        (<code>val </code><em>pre</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>label</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>attrs</em> : <a href="../../scala/xml/MetaData.html" target="_self">MetaData</a>, <code>val </code><em>scope</em> : <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>)<code> extends </code><a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>An element is encountered the first time</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvEntityRef.html" target="_self">EvEntityRef</a></em>
+        (<code>val </code><em>entity</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>An entity reference is encountered</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvProcInstr.html" target="_self">EvProcInstr</a></em>
+        (<code>val </code><em>target</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <code>val </code><em>text</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>A processing instruction is encountered</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvText.html" target="_self">EvText</a></em>
+        (<code>val </code><em>text</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a><code> with </code><a href="../../scala/Product.html" target="_self">Product</a>
+        
+        <div>A text node is encountered</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a></em>
+        <code> extends </code><a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>This class represents an XML event for pull parsing.
+  Pull parsing means that during the traversal of the XML
+  tree we are parsing, each "event" is returned to the caller
+  and the traversal is suspended.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/XMLEventReader.html" target="_self">XMLEventReader</a></em>
+        <code> extends </code><a href="../../scala/Iterator.html" target="_self">Iterator</a>[<a href="../../scala/xml/pull/XMLEvent.html" target="_self">XMLEvent</a>]
+        
+        <div></div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvComment$object.html" target="_self">EvComment</a></em>
+        <code> extends </code>(<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) =&gt; <a href="../../scala/xml/pull/EvComment.html" target="_self">EvComment</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvElemEnd$object.html" target="_self">EvElemEnd</a></em>
+        <code> extends </code>(<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) =&gt; <a href="../../scala/xml/pull/EvElemEnd.html" target="_self">EvElemEnd</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvElemStart$object.html" target="_self">EvElemStart</a></em>
+        <code> extends </code>(<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <a href="../../scala/xml/MetaData.html" target="_self">MetaData</a>, <a href="../../scala/xml/NamespaceBinding.html" target="_self">NamespaceBinding</a>) =&gt; <a href="../../scala/xml/pull/EvElemStart.html" target="_self">EvElemStart</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvEntityRef$object.html" target="_self">EvEntityRef</a></em>
+        <code> extends </code>(<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) =&gt; <a href="../../scala/xml/pull/EvEntityRef.html" target="_self">EvEntityRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvProcInstr$object.html" target="_self">EvProcInstr</a></em>
+        <code> extends </code>(<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) =&gt; <a href="../../scala/xml/pull/EvProcInstr.html" target="_self">EvProcInstr</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/xml/pull/EvText$object.html" target="_self">EvText</a></em>
+        <code> extends </code>(<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) =&gt; <a href="../../scala/xml/pull/EvText.html" target="_self">EvText</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

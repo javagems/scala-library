@@ -1,0 +1,1627 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class StringBuilder in scala</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../scala$package.html" target="_self">scala</a>
+        <br></br>
+        <span class="entity">class  StringBuilder</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/StringBuilder"><code>scala/StringBuilder.scala</code></a>]
+      </div><hr></hr>
+      <a name="StringBuilder"></a><dl>
+      <dt>
+        @<a href="../scala/serializable.html" target="_self">serializable</a><br></br>@<a href="../scala/SerialVersionUID.html" target="_self">SerialVersionUID</a>(-8525408645367278351L)<br></br>
+        <code>final</code>
+        <code>class</code>
+        <em>StringBuilder</em>(<em>initCapacity</em> : <a href="../scala/Int.html" target="_self">Int</a>, <code>private </code><em>initValue</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)
+      </dt>
+      <dd><code> extends </code>(<a href="../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../scala/Char.html" target="_self">Char</a></dd>
+    </dl>
+      <dl><dd><p>
+    A mutable sequence of characters.  This class provides an API compatible
+    with <a class="java/lang/StringBuilder" href="" target="_top">
+    <code>java.lang.StringBuilder</code></a>.
+  </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Stephane Micheloud</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.0</dd></dl>
+    
+      <table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Additional Constructor Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#this%28Int%29" target="_self">this</a></em>
+        (<em>capacity</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Constructs a string builder with no characters in it and an 
+    initial capacity specified by the <code>capacity</code> argument.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#this%28%29" target="_self">this</a></em>
+         : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Constructs a string builder with no characters in it and an 
+    initial capacity of 16 characters.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#this%28String%29" target="_self">this</a></em>
+        (<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        
+      </td>
+    </tr>
+      </table>
+
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Array%5BChar%5D%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Char.html" target="_self">Char</a>]) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Short%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Short.html" target="_self">Short</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Array%5BChar%5D%2CInt%2CInt%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Char.html" target="_self">Char</a>], <em>offset</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>len</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Boolean%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Long%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28String%29" target="_self">append</a></em>
+        (<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Appends the specified string to this character sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Char%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Char.html" target="_self">Char</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Int%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Any%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Any.html" target="_self">Any</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28StringBuilder%29" target="_self">append</a></em>
+        (<em>sb</em> : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Appends the specified string builder to this sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Seq%5BChar%5D%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/Char.html" target="_self">Char</a>]) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Double%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Double.html" target="_self">Double</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Byte%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Byte.html" target="_self">Byte</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#append%28Float%29" target="_self">append</a></em>
+        (<em>x</em> : <a href="../scala/Float.html" target="_self">Float</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#apply%28Int%29" target="_self">apply</a></em>
+        (<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Char.html" target="_self">Char</a>
+        
+        <div>Same as <code>charAt</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#capacity" target="_self">capacity</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div>Returns the current capacity. The capacity is the amount of storage 
+    available for newly inserted characters, beyond which an allocation 
+    will occur.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#capacity_%3D%28Int%29" target="_self">capacity_=</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Same as <code>ensureCapacity</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#charAt%28Int%29" target="_self">charAt</a></em>
+        (<em>index</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Char.html" target="_self">Char</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#delete%28Int%2CInt%29" target="_self">delete</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Removes the characters in a substring of this sequence.
+    The substring begins at the specified <code>start</code> and extends to
+    the character at index <code>end - 1</code> or to the end of the
+    sequence if no such character exists. If
+    <code>start</code> is equal to <code>end</code>, no changes are made.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#deleteCharAt%28Int%29" target="_self">deleteCharAt</a></em>
+        (<em>index</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#ensureCapacity%28Int%29" target="_self">ensureCapacity</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#indexOf%28String%2CInt%29" target="_self">indexOf</a></em>
+        (<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>fromIndex</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#indexOf%28String%29" target="_self">indexOf</a></em>
+        (<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CInt%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CBoolean%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CChar%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Char.html" target="_self">Char</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CFloat%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Float.html" target="_self">Float</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CShort%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Short.html" target="_self">Short</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CAny%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Any.html" target="_self">Any</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CDouble%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Double.html" target="_self">Double</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CString%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Inserts the string into this character sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CArray%5BChar%5D%2CInt%2CInt%29" target="_self">insert</a></em>
+        (<em>index</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>str</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Char.html" target="_self">Char</a>], <em>offset</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>len</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Inserts the string representation of a subarray of the <code>str</code>
+    array argument into this sequence. The subarray begins at the specified
+    <code>offset</code> and extends <code>len</code> <code>char</code>s.
+    The characters of the subarray are inserted into this sequence at
+    the position indicated by <code>index</code>. The length of this
+    sequence increases by <code>len</code> <code>Char</code>s.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CSeq%5BChar%5D%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/Char.html" target="_self">Char</a>]) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Inserts the string representation of the <code>Char</code> sequence 
+    argument into this sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CArray%5BChar%5D%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Char.html" target="_self">Char</a>]) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div>Inserts the string representation of the <code>Char</code> array 
+    argument into this sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CLong%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#insert%28Int%2CByte%29" target="_self">insert</a></em>
+        (<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Byte.html" target="_self">Byte</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#lastIndexOf%28String%2CInt%29" target="_self">lastIndexOf</a></em>
+        (<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>fromIndex</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#lastIndexOf%28String%29" target="_self">lastIndexOf</a></em>
+        (<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#length" target="_self">length</a></em>
+         : <a href="../scala/Int.html" target="_self">Int</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#length_%3D%28Int%29" target="_self">length_=</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#replace%28Int%2CInt%2CString%29" target="_self">replace</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Replaces the characters in a substring of this sequence
+    with characters in the specified <code>String</code>. The substring
+    begins at the specified <code>start</code> and extends to the character
+    at index <code>end - 1</code> or to the end of the sequence if no such
+    character exists. First the characters in the substring are removed and
+    then the specified <code>String</code> is inserted at <code>start</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#reverse%28%29" target="_self">reverse</a></em>
+         : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#setCharAt%28Int%2CChar%29" target="_self">setCharAt</a></em>
+        (<em>index</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>ch</em> : <a href="../scala/Char.html" target="_self">Char</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#setLength%28Int%29" target="_self">setLength</a></em>
+        (<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Sets the length of the character sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#substring%28Int%29" target="_self">substring</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns a new <code>String</code> that contains a subsequence of
+    characters currently contained in this character sequence. The 
+    substring begins at the specified index and extends to the end of
+    this sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#substring%28Int%2CInt%29" target="_self">substring</a></em>
+        (<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns a new <code>String</code> that contains a subsequence of
+    characters currently contained in this sequence. The 
+    substring begins at the specified <code>start</code> and 
+    extends to the character at index <code>end - 1</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#toArray" target="_self">toArray</a></em>
+         : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Char.html" target="_self">Char</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#toString%28%29" target="_self">toString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Returns a string representing the data in this sequence.
+    A new <code>String</code> object is allocated and initialized to 
+    contain the character sequence currently represented by this 
+    object. This <code>String</code> is then returned. Subsequent 
+    changes to this sequence do not affect the contents of the 
+    <code>String</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/StringBuilder.html#update%28Int%2CChar%29" target="_self">update</a></em>
+        (<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>c</em> : <a href="../scala/Char.html" target="_self">Char</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Same as <code>setCharAt</code>.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Function1.html" target="_self">Function1</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Function1.html#compose%28%28A%29%3D%3ET1%29" target="_self">compose</a>, <a href="../scala/Function1.html#andThen%28%28R%29%3D%3EA%29" target="_self">andThen</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      <table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Additional Constructor Details</td></tr>
+        </table><div><a name="this%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>this</em> : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Constructs a string builder with no characters in it and an 
+    initial capacity of 16 characters.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="this%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>this</em>(<em>capacity</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Constructs a string builder with no characters in it and an 
+    initial capacity specified by the <code>capacity</code> argument.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>capacity - </code>the initial capacity.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>NegativeArraySizeException - </code>if the <code>capacity</code>                      argument is less than <code>0</code>.</dd></dl>
+    <hr></hr>
+<a name="this%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>this</em>(<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="toArray"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>toArray</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Char.html" target="_self">Char</a>]
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="length"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>length</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="length_%3D%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>length_=</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="setLength%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>setLength</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Sets the length of the character sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>newLength - </code>the new length</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>IndexOutOfBoundsException - </code>if the <code>n</code> argument is negative.</dd></dl>
+    <hr></hr>
+<a name="capacity"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>capacity</em> : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns the current capacity. The capacity is the amount of storage 
+    available for newly inserted characters, beyond which an allocation 
+    will occur.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the current capacity</dd></dl>
+    <hr></hr>
+<a name="capacity_%3D%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>capacity_=</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Same as <code>ensureCapacity</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="ensureCapacity%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>ensureCapacity</em>(<em>n</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Ensures that the capacity is at least equal to the specified minimum.
+      If the current capacity is less than the argument, then a new internal
+      array is allocated with greater capacity. The new capacity is the larger of: 
+    </p>
+    <ul>
+      <li>The <code>n</code> argument. 
+      <li>Twice the old capacity, plus <code>2</code>. 
+    </ul>
+    <p>
+      If the <code>n</code> argument is non-positive, this
+      method takes no action and simply returns.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>n - </code>the minimum desired capacity.</dd></dl>
+    <hr></hr>
+<a name="charAt%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>charAt</em>(<em>index</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Char.html" target="_self">Char</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Returns the <code>Char</code> value in this sequence at the specified index.
+      The first <code>Char</code> value is at index <code>0</code>, the next at index
+      <code>1</code>, and so on, as in array indexing.
+    </p>
+    <p>
+      The index argument must be greater than or equal to
+      <code>0</code>, and less than the length of this sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>index - </code>the index of the desired <code>Char</code> value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the <code>Char</code> value at the specified index.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>IndexOutOfBoundsException - </code>if <code>index</code> is                     negative or greater than or equal to <code>length()</code>.</dd></dl>
+    <hr></hr>
+<a name="apply%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>apply</em>(<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Char.html" target="_self">Char</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Same as <code>charAt</code>.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Function1.html" target="_self">Function1</a>.<a href="../scala/Function1.html#apply%28T1%29" target="_self">apply</a>
+        </dd>
+      </dl><hr></hr>
+<a name="deleteCharAt%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>deleteCharAt</em>(<em>index</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Removes the <code>Char</code> at the specified position in this
+      sequence. This sequence is shortened by one <code>Char</code>.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>index - </code>Index of <code>Char</code> to remove</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>This object.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>StringIndexOutOfBoundsException - </code>if the <code>index</code>  	             is negative or greater than or equal to <code>length()</code>.</dd></dl>
+    <hr></hr>
+<a name="setCharAt%28Int%2CChar%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>setCharAt</em>(<em>index</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>ch</em> : <a href="../scala/Char.html" target="_self">Char</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      The character at the specified index is set to <code>ch</code>. This 
+      sequence is altered to represent a new character sequence that is 
+      identical to the old character sequence, except that it contains the 
+      character <code>ch</code> at position <code>index</code>. 
+    </p>
+    <p>
+      The index argument must be greater than or equal to 
+      <code>0</code>, and less than the length of this sequence. 
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>index - </code>the index of the character to modify.</dd><dd><code>ch - </code>the new character.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>IndexOutOfBoundsException - </code>if <code>index</code> is                     negative or greater than or equal to <code>length()</code>.</dd></dl>
+    <hr></hr>
+<a name="update%28Int%2CChar%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>update</em>(<em>i</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>c</em> : <a href="../scala/Char.html" target="_self">Char</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Same as <code>setCharAt</code>.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="substring%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>substring</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a new <code>String</code> that contains a subsequence of
+    characters currently contained in this character sequence. The 
+    substring begins at the specified index and extends to the end of
+    this sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>The beginning index, inclusive.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>The new string.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>StringIndexOutOfBoundsException - </code>if <code>start</code> is                   less than zero, or greater than the length of this object.</dd></dl>
+    <hr></hr>
+<a name="substring%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>substring</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a new <code>String</code> that contains a subsequence of
+    characters currently contained in this sequence. The 
+    substring begins at the specified <code>start</code> and 
+    extends to the character at index <code>end - 1</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>The beginning index, inclusive.</dd><dd><code>end - </code>The ending index, exclusive.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>The new string.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>StringIndexOutOfBoundsException - </code>if <code>start</code>                   or <code>end</code> are negative or greater than
+  		     <code>length()</code>, or <code>start</code> is
+  		     greater than <code>end</code>.</dd></dl>
+    <hr></hr>
+<a name="append%28Any%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Any.html" target="_self">Any</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Appends the string representation of the <code>Any</code> 
+      argument.
+    </p>
+    <p>
+      The argument is converted to a string as if by the method 
+      <code>String.valueOf</code>, and the characters of that 
+      string are then appended to this sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>x - </code>an <code>Any</code> object.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="append%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>s</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends the specified string to this character sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>s - </code>a string.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="append%28StringBuilder%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>sb</em> : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Appends the specified string builder to this sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>sb - </code></dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd></dd></dl>
+    <hr></hr>
+<a name="append%28Seq%5BChar%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/Char.html" target="_self">Char</a>]) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Appends the string representation of the <code>Char</code> sequence 
+      argument to this sequence.
+    </p>
+    <p>
+      The characters of the sequence argument are appended, in order,
+      to the contents of this sequence. The length of this sequence
+      increases by the length of the argument.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>x - </code>the characters to be appended.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="append%28Array%5BChar%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Char.html" target="_self">Char</a>]) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Appends the string representation of the <code>Char</code> array 
+      argument to this sequence.
+    </p>
+    <p>
+      The characters of the array argument are appended, in order, to 
+      the contents of this sequence. The length of this sequence
+      increases by the length of the argument.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>x - </code>the characters to be appended.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="append%28Array%5BChar%5D%2CInt%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Char.html" target="_self">Char</a>], <em>offset</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>len</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Appends the string representation of a subarray of the
+      <code>char</code> array argument to this sequence.
+    </p>
+    <p>
+      Characters of the <code>Char</code> array <code>x</code>, starting at
+      index <code>offset</code>, are appended, in order, to the contents
+      of this sequence. The length of this sequence increases
+      by the value of <code>len</code>.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>x - </code>the characters to be appended.</dd><dd><code>offset - </code>the index of the first <code>Char</code> to append.</dd><dd><code>len - </code>the number of <code>Char</code>s to append.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="append%28Boolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Appends the string representation of the <code>Boolean</code> 
+      argument to the sequence.
+    </p>
+    <p>
+      The argument is converted to a string as if by the method 
+      <code>String.valueOf</code>, and the characters of that 
+     string are then appended to this sequence. 
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>x - </code>a <code>Boolean</code>.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="append%28Byte%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Byte.html" target="_self">Byte</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="append%28Char%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Char.html" target="_self">Char</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="append%28Short%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Short.html" target="_self">Short</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="append%28Int%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="append%28Long%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="append%28Float%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Float.html" target="_self">Float</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="append%28Double%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>append</em>(<em>x</em> : <a href="../scala/Double.html" target="_self">Double</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="delete%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>delete</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Removes the characters in a substring of this sequence.
+    The substring begins at the specified <code>start</code> and extends to
+    the character at index <code>end - 1</code> or to the end of the
+    sequence if no such character exists. If
+    <code>start</code> is equal to <code>end</code>, no changes are made.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>The beginning index, inclusive.</dd><dd><code>end - </code>The ending index, exclusive.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>This object.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>StringIndexOutOfBoundsException - </code>if <code>start</code>                   is negative, greater than <code>length()</code>, or
+  		     greater than <code>end</code>.</dd></dl>
+    <hr></hr>
+<a name="replace%28Int%2CInt%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>replace</em>(<em>start</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>end</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Replaces the characters in a substring of this sequence
+    with characters in the specified <code>String</code>. The substring
+    begins at the specified <code>start</code> and extends to the character
+    at index <code>end - 1</code> or to the end of the sequence if no such
+    character exists. First the characters in the substring are removed and
+    then the specified <code>String</code> is inserted at <code>start</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>start - </code>The beginning index, inclusive.</dd><dd><code>end - </code>The ending index, exclusive.</dd><dd><code>str - </code>String that will replace previous contents.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>This object.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>StringIndexOutOfBoundsException - </code>if <code>start</code>                   is negative, greater than <code>length()</code>, or
+  		     greater than <code>end</code>.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CArray%5BChar%5D%2CInt%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>index</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>str</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Char.html" target="_self">Char</a>], <em>offset</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>len</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Inserts the string representation of a subarray of the <code>str</code>
+    array argument into this sequence. The subarray begins at the specified
+    <code>offset</code> and extends <code>len</code> <code>char</code>s.
+    The characters of the subarray are inserted into this sequence at
+    the position indicated by <code>index</code>. The length of this
+    sequence increases by <code>len</code> <code>Char</code>s.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>index - </code>position at which to insert subarray.</dd><dd><code>str - </code>a <code>Char</code> array.</dd><dd><code>offset - </code>the index of the first <code>char</code> in subarray to                   be inserted.</dd><dd><code>len - </code>the number of <code>Char</code>s in the subarray to                   be inserted.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>This object</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>StringIndexOutOfBoundsException - </code>if <code>index</code>                   is negative or greater than <code>length()</code>, or
+                   <code>offset</code> or <code>len</code> are negative, or
+                   <code>(offset+len)</code> is greater than
+                   <code>str.length</code>.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CAny%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Any.html" target="_self">Any</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Inserts the string representation of the <code>Any</code> 
+      argument into this character sequence.
+    </p>
+    <p>
+      The second argument is converted to a string as if by the method 
+      <code>String.valueOf</code>, and the characters of that 
+      string are then inserted into this sequence at the indicated 
+      offset. 
+    </p>
+    <p>
+      The offset argument must be greater than or equal to 
+      <code>0</code>, and less than or equal to the length of this 
+      sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>offset - </code>the offset.</dd><dd><code>x - </code>an <code>Any</code> value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>StringIndexOutOfBoundsException - </code>if the offset is invalid.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Inserts the string into this character sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a string.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>StringIndexOutOfBoundsException - </code>if the offset is invalid.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CSeq%5BChar%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/Char.html" target="_self">Char</a>]) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Inserts the string representation of the <code>Char</code> sequence 
+    argument into this sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a character sequence.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>StringIndexOutOfBoundsException - </code>if the offset is invalid.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CArray%5BChar%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="../scala/Char.html" target="_self">Char</a>]) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Inserts the string representation of the <code>Char</code> array 
+    argument into this sequence.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a character array.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>StringIndexOutOfBoundsException - </code>if the offset is invalid.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CBoolean%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Boolean.html" target="_self">Boolean</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Inserts the string representation of the <code>Boolean</code> argument
+      into this sequence.
+    </p>
+    <p>
+      The offset argument must be greater than or equal to 0, and less than
+      or equal to the length of this sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a <code>Boolean</code> value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CByte%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Byte.html" target="_self">Byte</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Inserts the string representation of the <code>Byte</code> argument
+      into this sequence.
+    </p>
+    <p>
+      The offset argument must be greater than or equal to 0, and less than
+      or equal to the length of this sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a <code>Byte</code> value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CChar%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Char.html" target="_self">Char</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Inserts the string representation of the <code>Char</code> argument
+      into this sequence.
+    </p>
+    <p>
+      The offset argument must be greater than or equal to 0, and less than
+      or equal to the length of this sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a <code>Char</code> value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CShort%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Short.html" target="_self">Short</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Inserts the string representation of the <code>Short</code> argument
+      into this sequence.
+    </p>
+    <p>
+      The offset argument must be greater than or equal to 0, and less than
+      or equal to the length of this sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a <code>Short</code> value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Inserts the string representation of the <code>Int</code> argument
+      into this sequence.
+    </p>
+    <p>
+      The offset argument must be greater than or equal to 0, and less than
+      or equal to the length of this sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a <code>Int</code> value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CLong%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Long.html" target="_self">Long</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Inserts the string representation of the <code>Long</code> argument
+      into this sequence.
+    </p>
+    <p>
+      The offset argument must be greater than or equal to 0, and less than
+      or equal to the length of this sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a <code>Long</code> value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CFloat%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Float.html" target="_self">Float</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Inserts the string representation of the <code>Float</code> argument
+      into this sequence.
+    </p>
+    <p>
+      The offset argument must be greater than or equal to 0, and less than
+      or equal to the length of this sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a <code>Float</code> value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="insert%28Int%2CDouble%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>insert</em>(<em>at</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>x</em> : <a href="../scala/Double.html" target="_self">Double</a>) : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Inserts the string representation of the <code>Double</code> argument
+      into this sequence.
+    </p>
+    <p>
+      The offset argument must be greater than or equal to 0, and less than
+      or equal to the length of this sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>at - </code>the offset position.</dd><dd><code>x - </code>a <code>Double</code> value.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="indexOf%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>indexOf</em>(<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Returns the index within this string of the first occurrence of the
+      specified substring. The integer returned is the smallest value 
+      <i>k</i> such that:
+    </p>
+    <blockquote><pre>
+    this.toString().startsWith(str, <i>k</i>)</pre>
+    </blockquote>
+    <p>
+      is <code>true</code>.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>str - </code>any string.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>if the string argument occurs as a substring within this                 object, then the index of the first character of the first
+                 such substring is returned; if it does not occur as a
+                 substring, <code>-1</code> is returned.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>NullPointerException - </code>if <code>str</code> is <code>null</code>.</dd></dl>
+    <hr></hr>
+<a name="indexOf%28String%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>indexOf</em>(<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>fromIndex</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Returns the index within this string of the first occurrence of the
+      specified substring, starting at the specified index. The integer
+      returned is the smallest value <code>k</code> for which:
+    </p><pre>
+      k >= Math.min(fromIndex, str.length()) &&
+                     this.toString().startsWith(str, k)</pre>
+    <p>
+      If no such value of <code>k</code> exists, then <code>-1</code>
+      is returned.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>str - </code>the substring for which to search.</dd><dd><code>fromIndex - </code>the index from which to start the search.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the index within this string of the first occurrence                      of the specified substring, starting at the specified index.</dd></dl>
+    <hr></hr>
+<a name="lastIndexOf%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>lastIndexOf</em>(<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Returns the index within this string of the rightmost occurrence
+      of the specified substring.  The rightmost empty string "" is
+      considered to occur at the index value <code>this.length()</code>. 
+      The returned index is the largest value <i>k</i> such that 
+    </p>
+    <blockquote><pre>
+    this.toString().startsWith(str, k)</pre>
+    </blockquote>
+    <p>
+      is true.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>str - </code>the substring to search for.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>if the string argument occurs one or more times as a substring                within this object, then the index of the first character of
+                the last such substring is returned. If it does not occur as
+                a substring, <code>-1</code> is returned.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Throws</b></dt><dd><code>NullPointerException - </code>if <code>str</code> is <code>null</code>.</dd></dl>
+    <hr></hr>
+<a name="lastIndexOf%28String%2CInt%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>lastIndexOf</em>(<em>str</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>fromIndex</em> : <a href="../scala/Int.html" target="_self">Int</a>) : <a href="../scala/Int.html" target="_self">Int</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Returns the index within this string of the last occurrence of the
+      specified substring. The integer returned is the largest value
+      <code>k</code> such that:
+    </p><pre>
+      k <= Math.min(fromIndex, str.length()) &&
+                     this.toString().startsWith(str, k)</pre>
+    <p>
+      If no such value of <code>k</code> exists, then <code>-1</code>
+      is returned.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>str - </code>the substring to search for.</dd><dd><code>fromIndex - </code>the index to start the search from.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the index within this sequence of the last occurrence                       of the specified substring.</dd></dl>
+    <hr></hr>
+<a name="reverse%28%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>reverse</em> : <a href="../scala/StringBuilder.html" target="_self">StringBuilder</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd><p>
+      Causes this character sequence to be replaced by the reverse of the
+      sequence. If there are any surrogate pairs included in the sequence,
+      these are treated as single characters for the reverse operation.
+      Thus, the order of the high-low surrogates is never reversed.
+    </p>
+    <p>
+      Let <i>n</i> be the character length of this character sequence
+      (not the length in <code>Char</code> values) just prior to
+      execution of the <code>reverse</code> method. Then the
+      character at index <i>k</i> in the new character sequence is
+      equal to the character at index <i>n-k-1</i> in the old
+      character sequence.
+    </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a reference to this object.</dd></dl>
+    <hr></hr>
+<a name="toString%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a string representing the data in this sequence.
+    A new <code>String</code> object is allocated and initialized to 
+    contain the character sequence currently represented by this 
+    object. This <code>String</code> is then returned. Subsequent 
+    changes to this sequence do not affect the contents of the 
+    <code>String</code>.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>a string representation of this sequence of characters.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../scala/Function1.html" target="_self">Function1</a>.<a href="../scala/Function1.html#toString%28%29" target="_self">toString</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

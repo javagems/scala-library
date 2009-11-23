@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.util.parsing.input</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.7.7.final API</div></div><p><div>This document is the API specification for Scala Library</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/CharArrayPosition.html" target="_self">CharArrayPosition</a></em>
+        (<code>val </code><em>source</em> : <a href="../../../scala/Array.html" target="_self">Array</a>[<a href="../../../scala/Char.html" target="_self">Char</a>], <code>val </code><em>line</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <code>val </code><em>column</em> : <a href="../../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../../scala/util/parsing/input/Position.html" target="_self">Position</a>
+        
+        <div><code>CharArrayPosition</code> implements the general <code>Position</code>
+  class for documents represented by an <code>Array</code> of `char's.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/CharArrayReader.html" target="_self">CharArrayReader</a></em>
+        (<em>chars</em> : <a href="../../../scala/Array.html" target="_self">Array</a>[<a href="../../../scala/Char.html" target="_self">Char</a>], <em>index</em> : <a href="../../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../../scala/util/parsing/input/CharSequenceReader.html" target="_self">CharSequenceReader</a>
+        
+        <div>A character array reader reads a stream of characters (keeping track of their positions) 
+ from an array.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/CharSequenceReader.html" target="_self">CharSequenceReader</a></em>
+        (<code>val override </code><em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>, <code>val override </code><em>offset</em> : <a href="../../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../../scala/util/parsing/input/Reader.html" target="_self">Reader</a>[<a href="../../../scala/Char.html" target="_self">Char</a>]
+        
+        <div>A character array reader reads a stream of characters (keeping track of their positions) 
+ from an array.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>case class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/OffsetPosition.html" target="_self">OffsetPosition</a></em>
+        (<code>val </code><em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>, <code>val </code><em>offset</em> : <a href="../../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../../scala/util/parsing/input/Position.html" target="_self">Position</a><code> with </code><a href="../../../scala/Product.html" target="_self">Product</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/PagedSeqReader.html" target="_self">PagedSeqReader</a></em>
+        (<em>seq</em> : <a href="../../../scala/collection/immutable/PagedSeq.html" target="_self">PagedSeq</a>[<a href="../../../scala/Char.html" target="_self">Char</a>], <code>val override </code><em>offset</em> : <a href="../../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../../scala/util/parsing/input/Reader.html" target="_self">Reader</a>[<a href="../../../scala/Char.html" target="_self">Char</a>]
+        
+        <div>A character array reader reads a stream of characters (keeping track of their positions) 
+ from an array.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/Position.html" target="_self">Position</a></em>
+        <code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/Positional.html" target="_self">Positional</a></em>
+        <code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A trait for objects that have a source position.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/Reader.html" target="_self">Reader</a></em>
+        [+<em>T</em>]<code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>An interface for streams of values that have positions.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>sealed class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/StreamReader.html" target="_self">StreamReader</a></em>
+        (<em>seq</em> : <a href="../../../scala/collection/immutable/PagedSeq.html" target="_self">PagedSeq</a>[<a href="../../../scala/Char.html" target="_self">Char</a>], <em>off</em> : <a href="../../../scala/Int.html" target="_self">Int</a>, <em>lnum</em> : <a href="../../../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../../../scala/util/parsing/input/PagedSeqReader.html" target="_self">PagedSeqReader</a>
+        
+        <div>A StreamReader reads from a character sequence, typically created as a PagedSeq  
+  from a java.io.Reader
+
+  NOTE:
+  StreamReaders do not really fulfill the new contract for readers, which 
+  requires a `source' CharSequence representing the full input.
+  Instead source is treated line by line.
+  As a consequence, regex matching cannot extend beyond a single line
+  when a StreamReader are used for input.
+
+  If you need to match regexes spanning several lines you should consider
+  class <code>PagedSeqReader</code> instead.</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/CharArrayReader$object.html" target="_self">CharArrayReader</a></em>
+        <code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>An object encapsulating basic character constants</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/CharSequenceReader$object.html" target="_self">CharSequenceReader</a></em>
+        <code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>An object encapsulating basic character constants</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/NoPosition$object.html" target="_self">NoPosition</a></em>
+        <code> extends </code><a href="../../../scala/util/parsing/input/Position.html" target="_self">Position</a>
+        
+        <div>Undefined position</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/OffsetPosition$object.html" target="_self">OffsetPosition</a></em>
+        <code> extends </code>(<a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>, <a href="../../../scala/Int.html" target="_self">Int</a>) =&gt; <a href="../../../scala/util/parsing/input/OffsetPosition.html" target="_self">OffsetPosition</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/PagedSeqReader$object.html" target="_self">PagedSeqReader</a></em>
+        <code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>An object encapsulating basic character constants</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/parsing/input/StreamReader$object.html" target="_self">StreamReader</a></em>
+        <code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>An object to create a StreamReader from a <code>java.io.Reader</code>.</div>
+      </td>
+    </tr>        
+        </table></body>
+      </html>

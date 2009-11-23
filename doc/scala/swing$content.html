@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.swing</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.7.7.final API</div></div><p><div>This document is the API specification for Scala Library</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/AbstractButton.html" target="_self">AbstractButton</a></em>
+        <code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a><code> with </code><a href="../scala/swing/Action$object.Trigger.html" target="_self">Trigger</a>
+        
+        <div>Base class of all button-like widgets, such as push buttons, 
+ check boxes, and radio buttons.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Action.html" target="_self">Action</a></em>
+        (<em>title0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>An abstract action to be performed in reaction to user input.
+ 
+ Not every action component will honor every property of its action. 
+ An action itself can generally be configured so that certain properties 
+ should be ignored and instead taken from the component directly. In the 
+ end, it is up to a component which property it uses in which way.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Applet.html" target="_self">Applet</a></em>
+        <code> extends </code><a href="" target="contentFrame" class="javax/swing/JApplet">javax.swing.JApplet</a><code> with </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Clients should implement the ui field. See the SimpleApplet demo for an example.
+ 
+ Note: <code>Applet</code> extends <code>javax.swing.JApplet</code> to satisfy 
+ Java's applet loading mechanism. The usual component wrapping scheme doesn't 
+ work here.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/BorderPanel.html" target="_self">BorderPanel</a></em>
+        <code> extends </code><a href="../scala/swing/Panel.html" target="_self">Panel</a><code> with </code><a href="../scala/swing/LayoutContainer.html" target="_self">LayoutContainer</a>
+        
+        <div>A container that arranges its children around a central component that 
+ takes most of the space. The other children are placed on one of four 
+ borders: north, east, south, west.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/BoxPanel.html" target="_self">BoxPanel</a></em>
+        (<em>orientation</em> : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>)<code> extends </code><a href="../scala/swing/Panel.html" target="_self">Panel</a><code> with </code><a href="../scala/swing/SequentialContainer$object.Wrapper.html" target="_self">Wrapper</a>
+        
+        <div>A panel that lays out its contents one after the other, 
+ either horizontally or vertically.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>protected[swing] abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/BufferWrapper.html" target="_self">BufferWrapper</a></em>
+        [<em>A</em>]<code> extends </code><a href="../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../scala/swing/BufferWrapper.html#A" target="_self">A</a>]
+        
+        <div>Default partial implementation for buffer adapters.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Button.html" target="_self">Button</a></em>
+        (<em>text0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/swing/AbstractButton.html" target="_self">AbstractButton</a>
+        
+        <div>A button that can be clicked, usually to perform some action.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/ButtonGroup.html" target="_self">ButtonGroup</a></em>
+        (<em>initialButtons</em> : <a href="../scala/swing/AbstractButton.html" target="_self">AbstractButton</a>*)<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>A button mutex. At most one of its associated buttons is selected 
+ at a time.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/CheckBox.html" target="_self">CheckBox</a></em>
+        (<em>text</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/swing/ToggleButton.html" target="_self">ToggleButton</a>
+        
+        <div>Two state button that can either be checked or unchecked.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/CheckMenuItem.html" target="_self">CheckMenuItem</a></em>
+        (<em>title0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/swing/MenuItem.html" target="_self">MenuItem</a>
+        
+        <div>A menu item with a check box.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/ComboBox.html" target="_self">ComboBox</a></em>
+        [<em>A</em>](<em>items</em> : <a href="../scala/Seq.html" target="_self">Seq</a>[<a href="../scala/swing/ComboBox.html#A" target="_self">A</a>])<code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a>
+        
+        <div>Let's the user make a selection from a list of predefined items. Visually,
+ this is implemented as a button-like component with a pull-down menu.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Component.html" target="_self">Component</a></em>
+        <code> extends </code><a href="../scala/swing/UIElement.html" target="_self">UIElement</a><code> with </code><a href="../scala/swing/Publisher.html" target="_self">Publisher</a>
+        
+        <div>Base class for all UI elements that can be displayed in a window.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Container.html" target="_self">Container</a></em>
+        <code> extends </code><a href="../scala/swing/UIElement.html" target="_self">UIElement</a>
+        
+        <div>A UI element that can contain <code>Component</code>s, such as windows, 
+ panels, and menus.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/FileChooser.html" target="_self">FileChooser</a></em>
+        (<em>dir</em> : <a href="" target="contentFrame" class="java/io/File">java.io.File</a>)<code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Used to open file dialogs.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/FlowPanel.html" target="_self">FlowPanel</a></em>
+        (<em>alignment</em> : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>)<code> extends </code><a href="../scala/swing/Panel.html" target="_self">Panel</a><code> with </code><a href="../scala/swing/SequentialContainer$object.Wrapper.html" target="_self">Wrapper</a>
+        
+        <div>A panel that arranges its contents horizontally, one after the other. 
+ If they don't fit, this panel will try to insert line breaks.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/FormattedTextField.html" target="_self">FormattedTextField</a></em>
+        (<em>format</em> : <a href="" target="contentFrame" class="java/text/Format">java.text.Format</a>)<code> extends </code><a href="../scala/swing/TextComponent.html" target="_self">TextComponent</a>
+        
+        <div>A text field with formatted input.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Frame.html" target="_self">Frame</a></em>
+        <code> extends </code><a href="../scala/swing/UIElement.html" target="_self">UIElement</a><code> with </code><a href="../scala/swing/RootPanel.html" target="_self">RootPanel</a><code> with </code><a href="../scala/swing/Publisher.html" target="_self">Publisher</a>
+        
+        <div>A window with decoration such as a title, border, and action buttons.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/GUIApplication.html" target="_self">GUIApplication</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/GridBagPanel.html" target="_self">GridBagPanel</a></em>
+        <code> extends </code><a href="../scala/swing/Panel.html" target="_self">Panel</a><code> with </code><a href="../scala/swing/LayoutContainer.html" target="_self">LayoutContainer</a>
+        
+        <div>A panel that arranges its children in a grid. Layout details can be 
+ given for each cell of the grid.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/GridPanel.html" target="_self">GridPanel</a></em>
+        (<em>rows0</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>cols0</em> : <a href="../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../scala/swing/Panel.html" target="_self">Panel</a><code> with </code><a href="../scala/swing/SequentialContainer$object.Wrapper.html" target="_self">Wrapper</a>
+        
+        <div>A panel that lays out its contents in a uniform grid.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Label.html" target="_self">Label</a></em>
+        (<em>text0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>icon0</em> : <a href="" target="contentFrame" class="javax/swing/Icon">javax.swing.Icon</a>, <em>align</em> : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>)<code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a>
+        
+        <div>A label component that display either a text, an icon, or both.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/LayoutContainer.html" target="_self">LayoutContainer</a></em>
+        <code> extends </code><a href="../scala/swing/Container$object.Wrapper.html" target="_self">Wrapper</a>
+        
+        <div>A container that associates layout constraints with its children.
+ See GridBagPanel for an example.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/ListView.html" target="_self">ListView</a></em>
+        [<em>A</em>]<code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a>
+        
+        <div>A component that displays a number of elements in a list. A list view does 
+ not support inline editing of items. If you need it, use a table view instead.
+ 
+ Named <code>ListView</code> to avoid a clash with the frequently used 
+ <code>scala.List</code></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/MainFrame.html" target="_self">MainFrame</a></em>
+        <code> extends </code><a href="../scala/swing/Frame.html" target="_self">Frame</a>
+        
+        <div>A frame that can be used for main application windows. Shuts down the 
+ framework and quits the application when closed.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Menu.html" target="_self">Menu</a></em>
+        (<em>title0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/swing/MenuItem.html" target="_self">MenuItem</a><code> with </code><a href="../scala/swing/SequentialContainer$object.Wrapper.html" target="_self">Wrapper</a>
+        
+        <div>A menu. Contains menu items. Being a menu item itself, menus can be nested.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/MenuBar.html" target="_self">MenuBar</a></em>
+        <code> extends </code><a href="../scala/swing/SequentialContainer$object.Wrapper.html" target="_self">Wrapper</a>
+        
+        <div>A menu bar. Each window can contain at most one. Contains a number of menus.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/MenuItem.html" target="_self">MenuItem</a></em>
+        (<em>title0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/swing/AbstractButton.html" target="_self">AbstractButton</a>
+        
+        <div>A menu item that can be used in a menu.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Orientable.html" target="_self">Orientable</a></em>
+        <code> extends </code><a href="../scala/swing/Oriented.html" target="_self">Oriented</a>
+        
+        <div>An <code>Oriented</code> whose orientation can be changed.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Oriented.html" target="_self">Oriented</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Something that can have an orientation.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Panel.html" target="_self">Panel</a></em>
+        <code> extends </code><a href="../scala/swing/Container$object.Wrapper.html" target="_self">Wrapper</a>
+        
+        <div>A component that can contain other components, such as layout panels.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/PasswordField.html" target="_self">PasswordField</a></em>
+        (<em>text0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>columns0</em> : <a href="../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../scala/swing/TextField.html" target="_self">TextField</a>
+        
+        <div>A password field, that displays a replacement character for each character in the password.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/ProgressBar.html" target="_self">ProgressBar</a></em>
+        <code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a><code> with </code><a href="../scala/swing/Orientable.html" target="_self">Orientable</a>
+        
+        <div>A bar indicating progress of some action. Can be in indeterminate mode, 
+ in which it indicates that the action is in progress (usually by some 
+ animation) but does not indicate the amount of work done or to be done.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Publisher.html" target="_self">Publisher</a></em>
+        <code> extends </code><a href="../scala/swing/Reactor.html" target="_self">Reactor</a>
+        
+        <div>Notifies registered reactions when an event is published. Publishers are also 
+ reactors and listen to themselves per default as a convenience.
+ 
+ In order to reduce memory leaks, reactions are weakly referenced by default, 
+ unless they implement <code>Reactions.StronglyReferenced</code>. That way, 
+ the lifetime of reactions are more easily bound to the registering object, 
+ which are reactors in common client code and hold strong references to their 
+ reactions. As a result, reactors can be garbage collected even though they 
+ still have reactions registered at some publisher, but not vice versa
+ since reactors (strongly) reference publishers they are interested in.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/RadioButton.html" target="_self">RadioButton</a></em>
+        (<em>text0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/swing/ToggleButton.html" target="_self">ToggleButton</a>
+        
+        <div>A two state button that is usually used in a <code>ButtonGroup</code> 
+ together with other <code>RadioButton</code>s, in order to indicate 
+ that at most one of them can be selected.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/RadioMenuItem.html" target="_self">RadioMenuItem</a></em>
+        (<em>title0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/swing/MenuItem.html" target="_self">MenuItem</a>
+        
+        <div>A menu item with a radio button.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Reactions.html" target="_self">Reactions</a></em>
+        <code> extends </code><a href="../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../scala/swing/event/Event.html" target="_self">Event</a>, <a href="../scala/Unit.html" target="_self">Unit</a>]
+        
+        <div>Used by reactors to let clients register custom event reactions.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Reactor.html" target="_self">Reactor</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The counterpart to publishers. Listens to events from registered publishers.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/RefBuffer.html" target="_self">RefBuffer</a></em>
+        [<em>A</em> &lt;: <a href="../scala/AnyRef.html" target="_self">AnyRef</a>]<code> extends </code><a href="../scala/collection/mutable/Buffer.html" target="_self">Buffer</a>[<a href="../scala/swing/RefBuffer.html#A" target="_self">A</a>]<code> with </code><a href="" target="contentFrame" class="scala/swing/SingleRefCollection">scala.swing.SingleRefCollection</a>[<a href="../scala/swing/RefBuffer.html#A" target="_self">A</a>]
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/RootPanel.html" target="_self">RootPanel</a></em>
+        <code> extends </code><a href="../scala/swing/Container.html" target="_self">Container</a><code> with </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>The root of a component hierarchy. Contains at most one component.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/ScrollPane.html" target="_self">ScrollPane</a></em>
+        <code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a><code> with </code><a href="../scala/swing/Container.html" target="_self">Container</a>
+        
+        <div>Can have at most a single child component, which will be put inside a canvas (the viewport)
+ that can be scrolled.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Scrollable.html" target="_self">Scrollable</a></em>
+        <code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a>
+        
+        <div>A component that is specially suitable for being placed inside a
+ <code>ScrollPane</code>.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Separator.html" target="_self">Separator</a></em>
+        (<em>o</em> : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>)<code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a><code> with </code><a href="../scala/swing/Oriented.html" target="_self">Oriented</a>
+        
+        <div>A bar that can be used a separator, most commonly in menus.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/SequentialContainer.html" target="_self">SequentialContainer</a></em>
+        <code> extends </code><a href="../scala/swing/Container.html" target="_self">Container</a>
+        
+        <div>A container that contains children in a specific sequential order.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/SimpleGUIApplication.html" target="_self">SimpleGUIApplication</a></em>
+        <code> extends </code><a href="../scala/swing/GUIApplication.html" target="_self">GUIApplication</a>
+        
+        <div>Extend this class for most simple UI applications. Clients need to implement the 
+ <code>top</code> method. Framework intialization is done by this class.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Slider.html" target="_self">Slider</a></em>
+        <code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a><code> with </code><a href="../scala/swing/Orientable.html" target="_self">Orientable</a>
+        
+        <div>Lets users select a value from a given range. Visually, this is represented
+ as a draggable knob on a horizontal or vertical bar.
+ 
+ Fires a ValueChanged event whenever the slider's value changes and 
+ when the knob is released.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/SplitPane.html" target="_self">SplitPane</a></em>
+        (<em>o</em> : <a href="../scala/Enumeration.Value.html" target="_self">Value</a>, <em>left</em> : <a href="../scala/swing/Component.html" target="_self">Component</a>, <em>right</em> : <a href="../scala/swing/Component.html" target="_self">Component</a>)<code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a><code> with </code><a href="../scala/swing/Container.html" target="_self">Container</a><code> with </code><a href="../scala/swing/Orientable.html" target="_self">Orientable</a>
+        
+        <div>A container with exactly two children. Arranges them side by side, either 
+ horizontally or vertically. Displays a draggable divider component between 
+ them that lets the user adjust the size ratio of the children.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/TabbedPane.html" target="_self">TabbedPane</a></em>
+        <code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a>
+        
+        <div>Displays the contents of one of several pages at a time. For each page a tab is 
+ visible at all times. The user can click on one of these tabs to move the 
+ corresponding page to the front.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Table.html" target="_self">Table</a></em>
+        <code> extends </code><a href="../scala/swing/Scrollable.html" target="_self">Scrollable</a>
+        
+        <div>Displays a matrix of items.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/TextArea.html" target="_self">TextArea</a></em>
+        (<em>text0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>rows0</em> : <a href="../scala/Int.html" target="_self">Int</a>, <em>columns0</em> : <a href="../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../scala/swing/TextComponent$object.HasColumns.html" target="_self">HasColumns</a><code> with </code><a href="../scala/swing/TextComponent$object.HasRows.html" target="_self">HasRows</a>
+        
+        <div>A text component that allows multiline text input and display.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/TextComponent.html" target="_self">TextComponent</a></em>
+        <code> extends </code><a href="../scala/swing/Component.html" target="_self">Component</a>
+        
+        <div>A component that allows some kind of text input and display.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/TextField.html" target="_self">TextField</a></em>
+        (<em>text0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>columns0</em> : <a href="../scala/Int.html" target="_self">Int</a>)<code> extends </code><a href="../scala/swing/TextComponent$object.HasColumns.html" target="_self">HasColumns</a>
+        
+        <div>A text component that allows single line text input and display.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/ToggleButton.html" target="_self">ToggleButton</a></em>
+        (<em>text0</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/swing/AbstractButton.html" target="_self">AbstractButton</a>
+        
+        <div>A two state button with a push button like user interface. 
+ Usually used in tool bars.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/UIElement.html" target="_self">UIElement</a></em>
+        <code> extends </code><a href="../scala/Proxy.html" target="_self">Proxy</a>
+        
+        <div>The base trait of all user interface elements. Subclasses belong to one 
+ of two groups: top-level elements such as windows and dialogs, or 
+ <code>Component</code>s.</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Action$object.html" target="_self">Action</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Alignment$object.html" target="_self">Alignment</a></em>
+        <code> extends </code><a href="../scala/Enumeration.html" target="_self">Enumeration</a>
+        
+        <div>Horizontal and vertical alignments. We sacrifice a bit of type-safety
+ for simplicity here.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/BorderPanel$object.html" target="_self">BorderPanel</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/ComboBox$object.html" target="_self">ComboBox</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Component$object.html" target="_self">Component</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Container$object.html" target="_self">Container</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Dialog$object.html" target="_self">Dialog</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Simple predefined dialogs.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/FileChooser$object.html" target="_self">FileChooser</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/FlowPanel$object.html" target="_self">FlowPanel</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/FormattedTextField$object.html" target="_self">FormattedTextField</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/GridBagPanel$object.html" target="_self">GridBagPanel</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/GridPanel$object.html" target="_self">GridPanel</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Key$object.html" target="_self">Key</a></em>
+        <code> extends </code><a href="../scala/Enumeration.html" target="_self">Enumeration</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/ListView$object.html" target="_self">ListView</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Orientation$object.html" target="_self">Orientation</a></em>
+        <code> extends </code><a href="../scala/Enumeration.html" target="_self">Enumeration</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Reactions$object.html" target="_self">Reactions</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/SequentialContainer$object.html" target="_self">SequentialContainer</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Swing$object.html" target="_self">Swing</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Helpers for this package.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/TabbedPane$object.html" target="_self">TabbedPane</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/Table$object.html" target="_self">Table</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/swing/TextComponent$object.html" target="_self">TextComponent</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

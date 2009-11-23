@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>trait WorkerThreadScheduler in scala.actors</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../scala/actors$package.html" target="_self">scala.actors</a>
+        <br></br>
+        <span class="entity">trait  WorkerThreadScheduler</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/actors/WorkerThreadScheduler"><code>scala/actors/WorkerThreadScheduler.scala</code></a>]
+      </div><hr></hr>
+      <a name="WorkerThreadScheduler"></a><dl>
+      <dt>
+        @<a href="../../scala/deprecated.html" target="_self">deprecated</a><br></br>
+        <code></code>
+        <code>trait</code>
+        <em>WorkerThreadScheduler</em>
+      </dt>
+      <dd><code> extends </code><a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a></dd>
+    </dl><dl>
+      <dt style="margin:10px 0 0 20px;"><b>Direct Known Subclasses:</b></dt>
+      <dd><a href="../../scala/actors/TickedScheduler.html" target="_self">TickedScheduler</a></dd>
+      </dl><hr></hr>
+      
+
+<table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Values and Variables inherited from <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/actors/IScheduler.html#QUIT_TASK" target="_self">QUIT_TASK</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../scala/actors/WorkerThreadScheduler.html#getTask%28scala.actors.WorkerThread%29" target="_self">getTask</a></em>
+        (<em>worker</em> : <a href="../../scala/actors/WorkerThread.html" target="_self">WorkerThread</a>) : <a href="" target="contentFrame" class="java/lang/Runnable">java.lang.Runnable</a>
+        
+        <div></div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/actors/IScheduler.html" target="_self">IScheduler</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/actors/IScheduler.html#execute%28%3D%3EUnit%29" target="_self">execute</a> (abstract), <a href="../../scala/actors/IScheduler.html#execute%28java.lang.Runnable%29" target="_self">execute</a> (abstract), <a href="../../scala/actors/IScheduler.html#tick%28scala.actors.Actor%29" target="_self">tick</a> (abstract), <a href="../../scala/actors/IScheduler.html#shutdown%28%29" target="_self">shutdown</a> (abstract), <a href="../../scala/actors/IScheduler.html#onLockup%28%28%29%3D%3EUnit%29" target="_self">onLockup</a> (abstract), <a href="../../scala/actors/IScheduler.html#onLockup%28Int%29" target="_self">onLockup</a> (abstract), <a href="../../scala/actors/IScheduler.html#printActorDump" target="_self">printActorDump</a> (abstract)
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="getTask%28scala.actors.WorkerThread%29"></a><dl>
+      <dt>
+        
+        <code>abstract</code>
+        <code>def</code>
+        <em>getTask</em>(<em>worker</em> : <a href="../../scala/actors/WorkerThread.html" target="_self">WorkerThread</a>) : <a href="" target="contentFrame" class="java/lang/Runnable">java.lang.Runnable</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>worker - </code>the worker thread executing tasks</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>the task to be executed</dd></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

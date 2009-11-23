@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.reflect</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.7.7.final API</div></div><p><div>This document is the API specification for Scala Library</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/BeanDescription.html" target="_self">BeanDescription</a></em>
+        (<code>val </code><em>description</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div>Provides a short description that will be included when generating
+  bean information. This annotation can be attached to the bean itself,
+  or to any member.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/BeanDisplayName.html" target="_self">BeanDisplayName</a></em>
+        (<code>val </code><em>name</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>)<code> extends </code><a href="../scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div>Provides a display name when generating bean information. This
+  annotation can be attached to the bean itself, or to any member.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/BeanInfo.html" target="_self">BeanInfo</a></em>
+        <code> extends </code><a href="../scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/BeanInfoSkip.html" target="_self">BeanInfoSkip</a></em>
+        <code> extends </code><a href="../scala/Annotation.html" target="_self">Annotation</a>
+        
+        <div>This attribute indicates that bean information should
+  <strong>not</strong> be generated for the val, var, or def that it is
+  attached to.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/BeanProperty.html" target="_self">BeanProperty</a></em>
+        <code> extends </code><a href="../scala/StaticAnnotation.html" target="_self">StaticAnnotation</a>
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/reflect/ScalaBeanInfo.html" target="_self">ScalaBeanInfo</a></em>
+        (<em>clazz</em> : <a href="" target="contentFrame" class="java/lang/Class">java.lang.Class</a>[<a href="../scala/Any.html" target="_self">Any</a>], <em>props</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>], <em>methods</em> : <a href="../scala/Array.html" target="_self">Array</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>])<code> extends </code><a href="" target="contentFrame" class="java/beans/SimpleBeanInfo">java.beans.SimpleBeanInfo</a><code> with </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        <div>Provides some simple runtime processing necessary to create
+  JavaBean descriptors for Scala entities. The compiler creates
+  subclasses of this class automatically when the BeanInfo annotation is
+  attached to a class.</div>
+      </td>
+    </tr>        
+        </table>
+</body>
+      </html>

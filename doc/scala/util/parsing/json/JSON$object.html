@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>object JSON in scala.util.parsing.json</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../../scala/util/parsing/json$package.html" target="_self">scala.util.parsing.json</a>
+        <br></br>
+        <span class="entity">object  JSON</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/util/parsing/json/JSON"><code>scala/util/parsing/json/JSON.scala</code></a>]
+      </div><hr></hr>
+      <a name="JSON"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>object</code>
+        <em>JSON</em>
+      </dt>
+      <dd><code> extends </code><a href="../../../../scala/util/parsing/json/Parser.html" target="_self">Parser</a></dd>
+    </dl>
+      <dl><dd>This object provides a simple interface to the JSON parser class. The default conversion
+ for numerics is into a double. If you wish to override this behavior at the global level,
+ you can set the globalNumberParser property to your own (String => Any) function. If you only
+ want to override at the per-thread level then you can set the perThreadNumberParser property to your
+ function. For example:
+ 
+ <pre>
+ val myConversionFunc = {input : String => BigDecimal(input)}
+ 
+ // Global override
+ JSON.globalNumberParser = myConversionFunc
+ 
+ // Per-thread override
+ JSON.perThreadNumberParser = myConversionFunc
+ </pre></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Derek Chen-Becker <"java"+@+"chen-becker"+"."+"org"></dd></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Values and Variables inherited from <a href="../../../../scala/util/parsing/json/Parser.html" target="_self">Parser</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/json/Parser.html#lexical" target="_self">lexical</a>, <a href="../../../../scala/util/parsing/json/Parser.html#defaultNumberParser" target="_self">defaultNumberParser</a>, <a href="../../../../scala/util/parsing/json/Parser.html#numberParser" target="_self">numberParser</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Values and Variables inherited from <a href="../../../../scala/util/parsing/combinator/Parsers.html" target="_self">Parsers</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/combinator/Parsers.html#lastNoSuccess" target="_self">lastNoSuccess</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/json/JSON$object.html#globalNumberParser" target="_self">globalNumberParser</a></em>
+         : <a href="../../../../scala/Function1.html" target="_self">Function1</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/json/JSON$object.html#globalNumberParser_%3D%28%28String%29%3D%3EAny%29" target="_self">globalNumberParser_=</a></em>
+        (<em>f</em> : <a href="../../../../scala/Function1.html" target="_self">Function1</a>) : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>The global (VM) default function for converting a string to a numeric value.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/json/JSON$object.html#parse%28String%29" target="_self">parse</a></em>
+        (<em>input</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../../scala/Option.html" target="_self">Option</a>[<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/Any.html" target="_self">Any</a>]]
+        
+        <div>Parse the given JSON string and return a list of elements. If the
+   string is a JSON object it will be a list of pairs. If it's a JSON 
+   array it will be be a list of individual elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/json/JSON$object.html#parseFull%28String%29" target="_self">parseFull</a></em>
+        (<em>input</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../../scala/Option.html" target="_self">Option</a>[<a href="../../../../scala/Any.html" target="_self">Any</a>]
+        
+        <div>Parse the given JSON string and return either a <code>List[Any]</code>
+   if the JSON string specifies an <code>Array</code>, or a
+   <code>Map[String,Any]</code> if the JSON string specifies an object.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/json/JSON$object.html#perThreadNumberParser" target="_self">perThreadNumberParser</a></em>
+         : <a href="../../../../scala/Function1.html" target="_self">Function1</a>
+        
+        
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/json/JSON$object.html#perThreadNumberParser_%3D%28%28String%29%3D%3EAny%29" target="_self">perThreadNumberParser_=</a></em>
+        (<em>f</em> : <a href="../../../../scala/Function1.html" target="_self">Function1</a>) : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+        
+        <div>Defines the function used to convert a numeric string literal into a numeric format on a per-thread
+   basis. Use globalNumberParser for a global override</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/json/JSON$object.html#resolveType%28List%5B_%5D%29" target="_self">resolveType</a></em>
+        (<em>input</em> : <a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/Any.html" target="_self">Any</a>]) : <a href="../../../../scala/Any.html" target="_self">Any</a>
+        
+        <div>A utility method to resolve a parsed JSON list into objects or 
+   arrays. See the parse method for details.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/util/parsing/json/Parser.html" target="_self">Parser</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/json/Parser.html#root" target="_self">root</a>, <a href="../../../../scala/util/parsing/json/Parser.html#jsonObj" target="_self">jsonObj</a>, <a href="../../../../scala/util/parsing/json/Parser.html#jsonArray" target="_self">jsonArray</a>, <a href="../../../../scala/util/parsing/json/Parser.html#objEntry" target="_self">objEntry</a>, <a href="../../../../scala/util/parsing/json/Parser.html#value" target="_self">value</a>, <a href="../../../../scala/util/parsing/json/Parser.html#stringVal" target="_self">stringVal</a>, <a href="../../../../scala/util/parsing/json/Parser.html#number" target="_self">number</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html" target="_self">ImplicitConversions</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten2%28%28A%2CB%29%3D%3EC%29" target="_self">flatten2</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten3%28%28A%2CB%2CC%29%3D%3ED%29" target="_self">flatten3</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten4%28%28A%2CB%2CC%2CD%29%3D%3EE%29" target="_self">flatten4</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#flatten5%28%28A%2CB%2CC%2CD%2CE%29%3D%3EF%29" target="_self">flatten5</a>, <a href="../../../../scala/util/parsing/combinator/ImplicitConversions.html#headOptionTailToFunList%28%28List%5BA%5D%29%3D%3ET%29" target="_self">headOptionTailToFunList</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/util/parsing/combinator/syntactical/StdTokenParsers.html" target="_self">StdTokenParsers</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/combinator/syntactical/StdTokenParsers.html#keyword%28String%29" target="_self">keyword</a>, <a href="../../../../scala/util/parsing/combinator/syntactical/StdTokenParsers.html#numericLit" target="_self">numericLit</a>, <a href="../../../../scala/util/parsing/combinator/syntactical/StdTokenParsers.html#stringLit" target="_self">stringLit</a>, <a href="../../../../scala/util/parsing/combinator/syntactical/StdTokenParsers.html#ident" target="_self">ident</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/util/parsing/combinator/Parsers.html" target="_self">Parsers</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/combinator/Parsers.html#Parser%28%28Parsers.this.Input%29%3D%3EParsers.this.ParseResult%5BT%5D%29" target="_self">Parser</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#OnceParser%28%28Parsers.this.Input%29%3D%3EParsers.this.ParseResult%5BT%5D%29" target="_self">OnceParser</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#commit%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">commit</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#elem%28String%2C%28Parsers.this.Elem%29%3D%3EBoolean%29" target="_self">elem</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#elem%28Parsers.this.Elem%29" target="_self">elem</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#accept%28Parsers.this.Elem%29" target="_self">accept</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#accept%28ES%29" target="_self">accept</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#accept%28String%2CPartialFunction%5BParsers.this.Elem%2CU%5D%29" target="_self">accept</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#acceptIf%28%28Parsers.this.Elem%29%3D%3EBoolean%29" target="_self">acceptIf</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#acceptMatch%28String%2CPartialFunction%5BParsers.this.Elem%2CU%5D%29" target="_self">acceptMatch</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#acceptSeq%28ES%29" target="_self">acceptSeq</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#failure%28String%29" target="_self">failure</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#err%28String%29" target="_self">err</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#success%28T%29" target="_self">success</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#log%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">log</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#rep%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">rep</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#repsep%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5BAny%5D%29" target="_self">repsep</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#rep1%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">rep1</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#rep1%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">rep1</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#repN%28Int%2C%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">repN</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#rep1sep%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5BAny%5D%29" target="_self">rep1sep</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#chainl1%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5B%28T%2CT%29%3D%3ET%5D%29" target="_self">chainl1</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#chainl1%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5BU%5D%2C%3D%3EParsers.this.Parser%5B%28T%2CU%29%3D%3ET%5D%29" target="_self">chainl1</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#chainr1%28%3D%3EParsers.this.Parser%5BT%5D%2C%3D%3EParsers.this.Parser%5B%28T%2CU%29%3D%3EU%5D%2C%28T%2CU%29%3D%3EU%2CU%29" target="_self">chainr1</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#opt%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">opt</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#not%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">not</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#positioned%28%3D%3EParsers.this.Parser%5BT%5D%29" target="_self">positioned</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#phrase%28Parsers.this.Parser%5BT%5D%29" target="_self">phrase</a>, <a href="../../../../scala/util/parsing/combinator/Parsers.html#mkList" target="_self">mkList</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="parse%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>parse</em>(<em>input</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../../scala/Option.html" target="_self">Option</a>[<a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/Any.html" target="_self">Any</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Parse the given JSON string and return a list of elements. If the
+   string is a JSON object it will be a list of pairs. If it's a JSON 
+   array it will be be a list of individual elements.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>input - </code>the given JSON string.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>an optional list of of elements.</dd></dl>
+    <hr></hr>
+<a name="parseFull%28String%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>parseFull</em>(<em>input</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="../../../../scala/Option.html" target="_self">Option</a>[<a href="../../../../scala/Any.html" target="_self">Any</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Parse the given JSON string and return either a <code>List[Any]</code>
+   if the JSON string specifies an <code>Array</code>, or a
+   <code>Map[String,Any]</code> if the JSON string specifies an object.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>input - </code>the given JSON string.</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>an optional list or map.</dd></dl>
+    <hr></hr>
+<a name="resolveType%28List%5B_%5D%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>resolveType</em>(<em>input</em> : <a href="../../../../scala/List.html" target="_self">List</a>[<a href="../../../../scala/Any.html" target="_self">Any</a>]) : <a href="../../../../scala/Any.html" target="_self">Any</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>A utility method to resolve a parsed JSON list into objects or 
+   arrays. See the parse method for details.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="globalNumberParser_%3D%28%28String%29%3D%3EAny%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>globalNumberParser_=</em>(<em>f</em> : <a href="../../../../scala/Function1.html" target="_self">Function1</a>) : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The global (VM) default function for converting a string to a numeric value.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="globalNumberParser"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>globalNumberParser</em> : <a href="../../../../scala/Function1.html" target="_self">Function1</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr>
+<a name="perThreadNumberParser_%3D%28%28String%29%3D%3EAny%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>perThreadNumberParser_=</em>(<em>f</em> : <a href="../../../../scala/Function1.html" target="_self">Function1</a>) : <a href="../../../../scala/Unit.html" target="_self">Unit</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Defines the function used to convert a numeric string literal into a numeric format on a per-thread
+   basis. Use globalNumberParser for a global override</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="perThreadNumberParser"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>perThreadNumberParser</em> : <a href="../../../../scala/Function1.html" target="_self">Function1</a>
+      </dt>
+      <dd></dd>
+    </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

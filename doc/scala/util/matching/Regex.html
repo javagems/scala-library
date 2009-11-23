@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class Regex in scala.util.matching</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../scala/util/matching$package.html" target="_self">scala.util.matching</a>
+        <br></br>
+        <span class="entity">class  Regex</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/util/matching/Regex"><code>scala/util/matching/Regex.scala</code></a>]
+      </div><hr></hr>
+      <a name="Regex"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>class</code>
+        <em>Regex</em>(<em>regex</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>, <em>groupNames</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>*)
+      </dt>
+      <dd><code> extends </code><a href="../../../scala/AnyRef.html" target="_self">AnyRef</a></dd>
+    </dl>
+      <dl><dd>This class provides methods for creating and using regular expressions.
+  It is based on the regular expressions of the JDK since 1.4.
+
+  <p>
+  You can use special pattern syntax construct <code>(?idmsux-idmsux)</code> to switch
+  various regex compilation options like <code>CASE_INSENSITIVE</code> or <code>UNICODE_CASE</code>.
+  See <code>java.util.regex.Pattern</code> javadoc for details.
+  </p></dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Thibaud Hottelier</dd><dd>Philipp Haller</dd><dd>Martin Odersky</dd><dt style="margin:10px 0 0 20px;">
+        <b>Version</b></dt><dd>1.1, 29/01/2008</dd><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>regex - </code>A string representing a regular expression</dd><dd><code>groupNames - </code>A mapping from names to indices in capture groups</dd></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Value Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> val</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/matching/Regex.html#pattern" target="_self">pattern</a></em>
+         : <a href="" target="contentFrame" class="java/util/regex/Pattern">java.util.regex.Pattern</a>
+        
+        <div>The compiled pattern</div>
+      </td>
+    </tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/matching/Regex.html#findAllIn%28java.lang.CharSequence%29" target="_self">findAllIn</a></em>
+        (<em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>) : <a href="../../../scala/util/matching/Regex$object.MatchIterator.html" target="_self">MatchIterator</a>
+        
+        <div>Return all matches of this regexp in given character sequence as an iterator</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/matching/Regex.html#findFirstIn%28java.lang.CharSequence%29" target="_self">findFirstIn</a></em>
+        (<em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+        
+        <div>Return optionally first matching string of this regexp in given character sequence,
+    None if it does not exist.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/matching/Regex.html#findFirstMatchIn%28java.lang.CharSequence%29" target="_self">findFirstMatchIn</a></em>
+        (<em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/util/matching/Regex$object.Match.html" target="_self">Match</a>]
+        
+        <div>Return optionally first match of this regexp in given character sequence,
+    None if it does not exist.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/matching/Regex.html#findPrefixMatchOf%28java.lang.CharSequence%29" target="_self">findPrefixMatchOf</a></em>
+        (<em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/util/matching/Regex$object.Match.html" target="_self">Match</a>]
+        
+        <div>Return optionally match of this regexp at the beginning of the 
+    given character sequence, or None if regexp matches no prefix 
+    of the character sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/matching/Regex.html#findPrefixOf%28java.lang.CharSequence%29" target="_self">findPrefixOf</a></em>
+        (<em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+        
+        <div>Return optionally match of this regexp at the beginning of the 
+    given character sequence, or None if regexp matches no prefix 
+    of the character sequence.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/matching/Regex.html#replaceAllIn%28java.lang.CharSequence%2CString%29" target="_self">replaceAllIn</a></em>
+        (<em>target</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>, <em>replacement</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Replaces all matches by a string.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/matching/Regex.html#replaceFirstIn%28java.lang.CharSequence%2CString%29" target="_self">replaceFirstIn</a></em>
+        (<em>target</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>, <em>replacement</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>Replaces the first match by a string.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/matching/Regex.html#toString%28%29" target="_self">toString</a></em>
+         : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+        
+        <div>The string defining the regular expression</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../scala/util/matching/Regex.html#unapplySeq%28Any%29" target="_self">unapplySeq</a></em>
+        (<em>target</em> : <a href="../../../scala/Any.html" target="_self">Any</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/List.html" target="_self">List</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]]
+        
+        <div>Tries to match target (whole match) and returns
+    the matches.</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Value Details</td></tr>
+        </table><div><a name="pattern"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>val</code>
+        <em>pattern</em> : <a href="" target="contentFrame" class="java/util/regex/Pattern">java.util.regex.Pattern</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The compiled pattern</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="unapplySeq%28Any%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>unapplySeq</em>(<em>target</em> : <a href="../../../scala/Any.html" target="_self">Any</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/List.html" target="_self">List</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Tries to match target (whole match) and returns
+    the matches.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>target - </code>The string to match</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>The matches</dd></dl>
+    <hr></hr>
+<a name="findAllIn%28java.lang.CharSequence%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>findAllIn</em>(<em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>) : <a href="../../../scala/util/matching/Regex$object.MatchIterator.html" target="_self">MatchIterator</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return all matches of this regexp in given character sequence as an iterator</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="findFirstIn%28java.lang.CharSequence%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>findFirstIn</em>(<em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return optionally first matching string of this regexp in given character sequence,
+    None if it does not exist.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="findFirstMatchIn%28java.lang.CharSequence%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>findFirstMatchIn</em>(<em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/util/matching/Regex$object.Match.html" target="_self">Match</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return optionally first match of this regexp in given character sequence,
+    None if it does not exist.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="findPrefixOf%28java.lang.CharSequence%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>findPrefixOf</em>(<em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return optionally match of this regexp at the beginning of the 
+    given character sequence, or None if regexp matches no prefix 
+    of the character sequence.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="findPrefixMatchOf%28java.lang.CharSequence%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>findPrefixMatchOf</em>(<em>source</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>) : <a href="../../../scala/Option.html" target="_self">Option</a>[<a href="../../../scala/util/matching/Regex$object.Match.html" target="_self">Match</a>]
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Return optionally match of this regexp at the beginning of the 
+    given character sequence, or None if regexp matches no prefix 
+    of the character sequence.</dd></dl>
+      <dl></dl>
+    <hr></hr>
+<a name="replaceAllIn%28java.lang.CharSequence%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>replaceAllIn</em>(<em>target</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>, <em>replacement</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Replaces all matches by a string.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>target - </code>The string to match</dd><dd><code>replacement - </code>The string that will replace each match</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>The resulting string</dd></dl>
+    <hr></hr>
+<a name="replaceFirstIn%28java.lang.CharSequence%2CString%29"></a><dl>
+      <dt>
+        
+        <code></code>
+        <code>def</code>
+        <em>replaceFirstIn</em>(<em>target</em> : <a href="" target="contentFrame" class="java/lang/CharSequence">java.lang.CharSequence</a>, <em>replacement</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>) : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Replaces the first match by a string.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Parameters</b></dt><dd><code>target - </code>The string to match</dd><dd><code>replacement - </code>The string that will replace the match</dd><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>The resulting string</dd></dl>
+    <hr></hr>
+<a name="toString%28%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>toString</em> : <a href="" target="contentFrame" class="java/lang/String">java.lang.String</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The string defining the regular expression</dd></dl>
+      <dl></dl>
+    <hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>

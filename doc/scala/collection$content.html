@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>All classes and objects in scala.collection</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../script.js"></script>
+        </head>
+        <body onload="init()"><div class="page-title"><div>Scala 2.7.7.final API</div></div><p><div>This document is the API specification for Scala Library</div></p><table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Class Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code>abstract class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/BitSet.html" target="_self">BitSet</a></em>
+        <code> extends </code><a href="../scala/collection/Set.html" target="_self">Set</a>[<a href="../scala/Int.html" target="_self">Int</a>]
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/Map.html" target="_self">Map</a></em>
+        [<em>A</em>, +<em>B</em>]<code> extends </code><a href="../scala/PartialFunction.html" target="_self">PartialFunction</a>[<a href="../scala/collection/Map.html#A" target="_self">A</a>, <a href="../scala/collection/Map.html#B" target="_self">B</a>]<code> with </code><a href="../scala/Collection.html" target="_self">Collection</a>[(<a href="../scala/collection/Map.html#A" target="_self">A</a>, <a href="../scala/collection/Map.html#B" target="_self">B</a>)]
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/MapProxy.html" target="_self">MapProxy</a></em>
+        [<em>A</em>, +<em>B</em>]<code> extends </code><a href="../scala/collection/Map.html" target="_self">Map</a>[<a href="../scala/collection/MapProxy.html#A" target="_self">A</a>, <a href="../scala/collection/MapProxy.html#B" target="_self">B</a>]<code> with </code><a href="../scala/CollectionProxy.html" target="_self">CollectionProxy</a>[(<a href="../scala/collection/MapProxy.html#A" target="_self">A</a>, <a href="../scala/collection/MapProxy.html#B" target="_self">B</a>)]
+        
+        <div>This is a simple wrapper class for <a href="Map.html"
+  target="contentFrame"><code>scala.collection.Map</code></a>.
+  It is most useful for assembling customized map abstractions
+  dynamically using object composition and forwarding.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/Ranged.html" target="_self">Ranged</a></em>
+        [<em>K</em>, +<em>A</em>]<code> extends </code><a href="../scala/Iterable.html" target="_self">Iterable</a>[<a href="../scala/collection/Ranged.html#A" target="_self">A</a>]
+        
+        <div>Any collection (including maps) whose keys (or elements) are ordered.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> class</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/RollbackIterator.html" target="_self">RollbackIterator</a></em>
+        [+<em>A</em>](<em>underlying</em> : <a href="../scala/Iterator.html" target="_self">Iterator</a>[<a href="../scala/collection/RollbackIterator.html#A" target="_self">A</a>])<code> extends </code><a href="../scala/BufferedIterator$object.Default.html" target="_self">Default</a>[<a href="../scala/collection/RollbackIterator.html#A" target="_self">A</a>]
+        
+        <div>Rollback iterators are buffered iterators which allow for unbounded rollbacks</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/Set.html" target="_self">Set</a></em>
+        [<em>A</em>]<code> extends </code>(<a href="../scala/collection/Set.html#A" target="_self">A</a>) =&gt; <a href="../scala/Boolean.html" target="_self">Boolean</a><code> with </code><a href="../scala/Collection.html" target="_self">Collection</a>[<a href="../scala/collection/Set.html#A" target="_self">A</a>]
+        
+        <div></div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/SetProxy.html" target="_self">SetProxy</a></em>
+        [<em>A</em>]<code> extends </code><a href="../scala/collection/Set.html" target="_self">Set</a>[<a href="../scala/collection/SetProxy.html#A" target="_self">A</a>]<code> with </code><a href="../scala/IterableProxy.html" target="_self">IterableProxy</a>[<a href="../scala/collection/SetProxy.html#A" target="_self">A</a>]
+        
+        <div>This is a simple wrapper class for <a href="Set.html"
+  target="contentFrame"><code>scala.collection.Set</code></a>.
+  It is most useful for assembling customized set abstractions
+  dynamically using object composition and forwarding.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/Sorted.html" target="_self">Sorted</a></em>
+        [<em>K</em>, +<em>A</em>]<code> extends </code><a href="../scala/collection/Ranged.html" target="_self">Ranged</a>[<a href="../scala/collection/Sorted.html#K" target="_self">K</a>, <a href="../scala/collection/Sorted.html#A" target="_self">A</a>]
+        
+        <div>Any collection (including maps) whose keys (or elements) are ordered.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/SortedMap.html" target="_self">SortedMap</a></em>
+        [<em>K</em>, +<em>E</em>]<code> extends </code><a href="../scala/collection/Map.html" target="_self">Map</a>[<a href="../scala/collection/SortedMap.html#K" target="_self">K</a>, <a href="../scala/collection/SortedMap.html#E" target="_self">E</a>]<code> with </code><a href="../scala/collection/Sorted.html" target="_self">Sorted</a>[<a href="../scala/collection/SortedMap.html#K" target="_self">K</a>, (<a href="../scala/collection/SortedMap.html#K" target="_self">K</a>, <a href="../scala/collection/SortedMap.html#E" target="_self">E</a>)]
+        
+        <div>A map whose keys are sorted.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code> trait</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/SortedSet.html" target="_self">SortedSet</a></em>
+        [<em>A</em>]<code> extends </code><a href="../scala/collection/Set.html" target="_self">Set</a>[<a href="../scala/collection/SortedSet.html#A" target="_self">A</a>]<code> with </code><a href="../scala/collection/Sorted.html" target="_self">Sorted</a>[<a href="../scala/collection/SortedSet.html#A" target="_self">A</a>, <a href="../scala/collection/SortedSet.html#A" target="_self">A</a>]
+        
+        <div>Analogous to a Java sorted set.</div>
+      </td>
+    </tr>        
+        </table>
+<table summary="" cellpadding="3" class="member">
+        <tr><td class="title" colspan="2">Object Summary</td></tr>
+        <tr>
+      <td class="modifiers" valign="top"> 
+        <code> object</code>
+      </td>
+      <td class="signature">
+        <em><a href="../scala/collection/Map$object.html" target="_self">Map</a></em>
+        <code> extends </code><a href="../scala/AnyRef.html" target="_self">AnyRef</a>
+        
+        
+      </td>
+    </tr>        
+        </table></body>
+      </html>

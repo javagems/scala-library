@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+        <head><title>class StreamReader in scala.util.parsing.input</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8"></meta><meta content="scaladoc (version 2.7.7.final)" name="generator"></meta><link href="../../../../style.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../../../script.js"></script>
+        </head>
+        <body onload="init()">
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+        
+      <div class="entity">
+        <a href="../../../../scala/util/parsing/input$package.html" target="_self">scala.util.parsing.input</a>
+        <br></br>
+        <span class="entity">class  StreamReader</span>
+      </div><hr></hr>
+      <div class="source">
+        [source: <a href="" class="scala/util/parsing/input/StreamReader"><code>scala/util/parsing/input/StreamReader.scala</code></a>]
+      </div><hr></hr>
+      <a name="StreamReader"></a><dl>
+      <dt>
+        
+        <code>sealed</code>
+        <code>class</code>
+        <em>StreamReader</em>(<em>seq</em> : <a href="../../../../scala/collection/immutable/PagedSeq.html" target="_self">PagedSeq</a>[<a href="../../../../scala/Char.html" target="_self">Char</a>], <em>off</em> : <a href="../../../../scala/Int.html" target="_self">Int</a>, <em>lnum</em> : <a href="../../../../scala/Int.html" target="_self">Int</a>)
+      </dt>
+      <dd><code> extends </code><a href="../../../../scala/util/parsing/input/PagedSeqReader.html" target="_self">PagedSeqReader</a></dd>
+    </dl>
+      <dl><dd>A StreamReader reads from a character sequence, typically created as a PagedSeq  
+  from a java.io.Reader
+
+  NOTE:
+  StreamReaders do not really fulfill the new contract for readers, which 
+  requires a `source' CharSequence representing the full input.
+  Instead source is treated line by line.
+  As a consequence, regex matching cannot extend beyond a single line
+  when a StreamReader are used for input.
+
+  If you need to match regexes spanning several lines you should consider
+  class <code>PagedSeqReader</code> instead.</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Author</b></dt><dd>Miles Sabin</dd><dd>Martin Odersky</dd></dl>
+    
+      
+
+<table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Values and Variables inherited from <a href="../../../../scala/util/parsing/input/PagedSeqReader.html" target="_self">PagedSeqReader</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/input/PagedSeqReader.html#offset" target="_self">offset</a>, <a href="../../../../scala/util/parsing/input/PagedSeqReader.html#source" target="_self">source</a>
+        </td></tr>
+      </table>
+<table summary="" cellpadding="3" class="member">
+      <tr><td class="title" colspan="2">Method Summary</td></tr>
+      <tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/input/StreamReader.html#drop%28Int%29" target="_self">drop</a></em>
+        (<em>n</em> : <a href="../../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../../scala/util/parsing/input/StreamReader.html" target="_self">StreamReader</a>
+        
+        <div>Returns an abstract reader consisting of all elements except the first
+    <code>n</code> elements.</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/input/StreamReader.html#pos" target="_self">pos</a></em>
+         : <a href="../../../../scala/util/parsing/input/Position.html" target="_self">Position</a>
+        
+        <div>The position of the first element in the reader</div>
+      </td>
+    </tr>
+<tr>
+      <td class="modifiers" valign="top"> 
+        <code>override def</code>
+      </td>
+      <td class="signature">
+        <em><a href="../../../../scala/util/parsing/input/StreamReader.html#rest" target="_self">rest</a></em>
+         : <a href="../../../../scala/util/parsing/input/StreamReader.html" target="_self">StreamReader</a>
+        
+        <div>Returns a PagedSeqReader consisting of all elements except the first</div>
+      </td>
+    </tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/util/parsing/input/PagedSeqReader.html" target="_self">PagedSeqReader</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/util/parsing/input/PagedSeqReader.html#first" target="_self">first</a>, <a href="../../../../scala/util/parsing/input/PagedSeqReader.html#atEnd" target="_self">atEnd</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/AnyRef.html" target="_self">AnyRef</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/AnyRef.html#getClass%28%29" target="_self">getClass</a>, <a href="../../../../scala/AnyRef.html#hashCode%28%29" target="_self">hashCode</a>, <a href="../../../../scala/AnyRef.html#equals%28Any%29" target="_self">equals</a>, <a href="../../../../scala/AnyRef.html#clone%28%29" target="_self">clone</a>, <a href="../../../../scala/AnyRef.html#toString%28%29" target="_self">toString</a>, <a href="../../../../scala/AnyRef.html#notify%28%29" target="_self">notify</a>, <a href="../../../../scala/AnyRef.html#notifyAll%28%29" target="_self">notifyAll</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28Long%2CInt%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#wait%28%29" target="_self">wait</a>, <a href="../../../../scala/AnyRef.html#finalize%28%29" target="_self">finalize</a>, <a href="../../../../scala/AnyRef.html#%3D%3D%28AnyRef%29" target="_self">==</a>, <a href="../../../../scala/AnyRef.html#%21%3D%28AnyRef%29" target="_self">!=</a>, <a href="../../../../scala/AnyRef.html#eq%28AnyRef%29" target="_self">eq</a>, <a href="../../../../scala/AnyRef.html#ne%28AnyRef%29" target="_self">ne</a>, <a href="../../../../scala/AnyRef.html#synchronized%28T0%29" target="_self">synchronized</a>
+        </td></tr>
+      </table><table summary="" cellpadding="3" class="inherited">
+        <tr><td class="title" colspan="2">
+          Methods inherited from <a href="../../../../scala/Any.html" target="_self">Any</a>
+        </td></tr>
+        <tr><td class="signature" colspan="2">
+          <a href="../../../../scala/Any.html#%3D%3D%28Any%29" target="_self">==</a>, <a href="../../../../scala/Any.html#%21%3D%28Any%29" target="_self">!=</a>, <a href="../../../../scala/Any.html#isInstanceOf" target="_self">isInstanceOf</a>, <a href="../../../../scala/Any.html#asInstanceOf" target="_self">asInstanceOf</a>
+        </td></tr>
+      </table>
+
+
+      
+
+
+<table summary="" cellpadding="3" class="member-detail">
+          <tr><td class="title">Method Details</td></tr>
+        </table><div><a name="rest"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>rest</em> : <a href="../../../../scala/util/parsing/input/StreamReader.html" target="_self">StreamReader</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns a PagedSeqReader consisting of all elements except the first</dd></dl>
+      <dl><dt style="margin:10px 0 0 20px;">
+        <b>Returns</b></dt><dd>If <code>atEnd</code> is <code>true</code>, the result will be           <code>this'; otherwise, it's a <code>PagedSeqReader</code> containing
+           the rest of input.</dd></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../../scala/util/parsing/input/PagedSeqReader.html" target="_self">PagedSeqReader</a>.<a href="../../../../scala/util/parsing/input/PagedSeqReader.html#rest" target="_self">rest</a>
+        </dd>
+      </dl><hr></hr>
+<a name="drop%28Int%29"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>drop</em>(<em>n</em> : <a href="../../../../scala/Int.html" target="_self">Int</a>) : <a href="../../../../scala/util/parsing/input/StreamReader.html" target="_self">StreamReader</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>Returns an abstract reader consisting of all elements except the first
+    <code>n</code> elements.</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../../scala/util/parsing/input/PagedSeqReader.html" target="_self">PagedSeqReader</a>.<a href="../../../../scala/util/parsing/input/PagedSeqReader.html#drop%28Int%29" target="_self">drop</a>
+        </dd>
+      </dl><hr></hr>
+<a name="pos"></a><dl>
+      <dt>
+        
+        <code>override</code>
+        <code>def</code>
+        <em>pos</em> : <a href="../../../../scala/util/parsing/input/Position.html" target="_self">Position</a>
+      </dt>
+      <dd></dd>
+    </dl>
+      <dl><dd>The position of the first element in the reader</dd></dl>
+      <dl></dl>
+    <dl>
+        <dt style="margin:10px 0 0 20px;">
+          <b>Overrides</b>
+        </dt>
+        <dd>
+        <a href="../../../../scala/util/parsing/input/PagedSeqReader.html" target="_self">PagedSeqReader</a>.<a href="../../../../scala/util/parsing/input/PagedSeqReader.html#pos" target="_self">pos</a>
+        </dd>
+      </dl><hr></hr></div>
+
+
+    <hr></hr>
+        <table summary="" class="navigation">
+        <tr>
+          <td class="navigation-links" valign="top">
+            <!-- <table><tr></tr></table> -->
+          </td>
+          <td align="right" valign="top" style="white-space:nowrap;" rowspan="2">
+            <div class="doctitle-larger">Scala Library</div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+      </body>
+      </html>
